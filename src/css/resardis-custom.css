@@ -1,0 +1,192 @@
+/* ibm-plex-sans-300 - latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.eot'); /* IE9 Compat Modes */
+  src: local('IBM Plex Sans Light'), local('IBMPlexSans-Light'),
+       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.svg#IBMPlexSans') format('svg'); /* Legacy iOS */
+  font-display: swap;
+}
+
+html, body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+.text-lightgrey {
+  color: #ECECEC !important;
+}
+
+.text-orange {
+  color: #F4A93B !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.text-justify, .text-justify p {
+  hyphens: auto;
+}
+
+.display-4 {
+  font-size: 3.0rem !important;
+}
+
+.jumbotron-fluid {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.info-full {
+  background-color: #1A1A1A !important;
+}
+
+.info-full .info-overlay {
+  position: relative;
+}
+
+.info-full .info-caption {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+}
+
+.info-full h1 {
+  position: relative;
+  top: 50%;
+}
+
+.info-full img {
+  width: 85%;
+  height: auto;
+}
+
+.info-double {
+  background-color: #4D4D4D !important;
+}
+
+.info-double .info-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.info-double img {
+  width: 85%;
+  height: auto;
+}
+
+@media only all and (min-width: 576px) {
+  .info-double img {
+    width: 85%;
+    height: auto;
+  }
+}
+
+@media only all and (min-width: 768px) {
+  .info-double img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media only all and (min-width: 992px) {
+  .info-double img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.navbar-brand {
+  font-size: 1.50em;
+}
+
+a, 
+footer a {
+  color: #F4A93B;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+a, 
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f08c1e;
+}
+
+a.dropdown-item:hover {
+  background-color: #4D4D4D;
+}
+
+.nav-item > a.nav-link {
+  color: #ECECEC !important;
+}
+
+.nav-item > a.nav-link:hover {
+  color: #F4A93B !important;
+}
+
+.navbar-toggler{
+  font-size: 1.35rem;
+}
+
+.navbar-toggler-icon{
+  width: 1.85em;
+  height: 1.85em;
+}
+
+.social-media {
+  font-size: 2.75em;
+}
+
+/* Lazysizes.js Start */
+/* Set at least min height and width to minimize reflows */
+/* Fade image in after load */
+.lazyload,
+.lazyloading {
+  min-height: 100px;
+  min-width: 100px;
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+/* Lazysizes.js End */
+
+.webp .motto-bg {
+  background-color: #4D4D4D !important;
+  background-image: url("../img/motto-bg.webp");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-webp .motto-bg {
+  background-color: #4D4D4D !important;
+  background-image: url("../img/motto-bg.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
