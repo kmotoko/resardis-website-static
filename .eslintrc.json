@@ -46,5 +46,14 @@
 
     "promise/always-return": "off",
     "promise/avoid-new": "off"
-  }
+  },
+
+  "overrides": [
+    {
+      "files": ["src/app.js"],
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    }
+  ]
 }
