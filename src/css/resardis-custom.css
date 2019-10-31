@@ -1,44 +1,49 @@
 /* ibm-plex-sans-300 - latin-ext */
 @font-face {
-  font-family: 'IBM Plex Sans';
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.eot'); /* IE9 Compat Modes */
-  src: local('IBM Plex Sans Light'), local('IBMPlexSans-Light'),
-       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.svg#IBMPlexSans') format('svg'); /* Legacy iOS */
+  src: url("../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.eot"); /* IE9 Compat Modes */
+  src:
+    local("IBM Plex Sans Light"),
+    local("IBMPlexSans-Light"),
+    url("../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.woff2") format("woff2"),
+    url("../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.woff") format("woff"),
+    url("../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.ttf") format("truetype"),
+    url("../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ibm/ibm-plex-sans-v7-latin-ext-300.svg#IBMPlexSans") format("svg"); /* Legacy iOS */
+
   font-display: swap;
 }
 
-html, body {
-  font-family: 'IBM Plex Sans', sans-serif;
+html,
+body {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .bg-dark {
-  background-color: #000000 !important;
+  background-color: #000 !important;
 }
 
 .text-lightgrey {
-  color: #ECECEC !important;
+  color: #ececec !important;
 }
 
 .text-orange {
-  color: #F4A93B !important;
+  color: #f4a93b !important;
 }
 
 .text-black {
-  color: #000000 !important;
+  color: #000 !important;
 }
 
-.text-justify, .text-justify p {
+.text-justify,
+.text-justify p {
   hyphens: auto;
 }
 
 .display-4 {
-  font-size: 3.0rem !important;
+  font-size: 3rem !important;
 }
 
 .jumbotron-fluid {
@@ -49,7 +54,7 @@ html, body {
 }
 
 .info-full {
-  background-color: #1A1A1A !important;
+  background-color: #1a1a1a !important;
 }
 
 .info-full .info-overlay {
@@ -74,13 +79,11 @@ html, body {
 }
 
 .info-double {
-  background-color: #4D4D4D !important;
+  background-color: #4d4d4d !important;
 }
 
 .info-double .info-title {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
 }
@@ -112,20 +115,20 @@ html, body {
 }
 
 .navbar-brand {
-  font-size: 1.50em;
+  font-size: 1.5em;
 }
 
-a, 
+a,
 footer a {
-  color: #F4A93B;
+  color: #f4a93b;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
+  text-decoration: none;
 }
 
-a, 
-a:link, 
-a:visited, 
-a:hover, 
+a:link,
+a:visited,
+a:hover,
 a:active {
   text-decoration: none;
 }
@@ -135,22 +138,22 @@ a:hover {
 }
 
 a.dropdown-item:hover {
-  background-color: #4D4D4D;
+  background-color: #4d4d4d;
 }
 
 .nav-item > a.nav-link {
-  color: #ECECEC !important;
+  color: #ececec !important;
 }
 
 .nav-item > a.nav-link:hover {
-  color: #F4A93B !important;
+  color: #f4a93b !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   font-size: 1.35rem;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   width: 1.85em;
   height: 1.85em;
 }
@@ -160,7 +163,9 @@ a.dropdown-item:hover {
 }
 
 /* Lazysizes.js Start */
+
 /* Set at least min height and width to minimize reflows */
+
 /* Fade image in after load */
 .lazyload,
 .lazyloading {
@@ -173,10 +178,11 @@ a.dropdown-item:hover {
   opacity: 1;
   transition: opacity 300ms;
 }
+
 /* Lazysizes.js End */
 
 .webp .motto-bg {
-  background-color: #4D4D4D !important;
+  background-color: #4d4d4d !important;
   background-image: url("../img/motto-bg.webp");
   background-position: right center;
   background-repeat: no-repeat;
@@ -184,7 +190,7 @@ a.dropdown-item:hover {
 }
 
 .no-webp .motto-bg {
-  background-color: #4D4D4D !important;
+  background-color: #4d4d4d !important;
   background-image: url("../img/motto-bg.png");
   background-position: right center;
   background-repeat: no-repeat;
