@@ -2,3 +2,5 @@ node_modules/
 static/
 .git/
 *.min.js
+g-analytics.js
+google-analytics.js
