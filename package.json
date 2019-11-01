@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "rm -rvf static/* && yarn modernizr -c modernizr-config.json -d src/js/modernizr.min.js && yarn webpack",
+    "build-modernizr": "yarn modernizr -c modernizr-config.json -d src/js/modernizr.min.js",
+    "lint-css": "yarn stylelint '**/*.css'",
+    "lint-css-fix": "yarn stylelint '**/*.css' --fix",
+    "lint-js": "yarn eslint .",
+    "lint-js-fix": "yarn eslint --fix ."
+  },
   "devDependencies": {
     "autoprefixer": "^9.7.0",
     "copy-webpack-plugin": "^5.0.4",
@@ -27,6 +35,8 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
+    "lazysizes": "^5.1.2",
+    "modernizr": "^3.8.0",
     "popper.js": "^1.16.0"
   }
 }
