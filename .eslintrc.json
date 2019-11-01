@@ -50,7 +50,7 @@
 
   "overrides": [
     {
-      "files": ["src/app.js"],
+      "files": ["src/base.js", "src/performance.js", "src/analytics.js"],
       "parserOptions": {
         "sourceType": "module"
       }
