@@ -8,7 +8,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/app.js',
+    base: path.resolve(__dirname, 'src', 'base.js'),
+    performance: path.resolve(__dirname, 'src', 'performance.js'),
+    analytics: path.resolve(__dirname, 'src', 'analytics.js'),
   },
   mode: 'production',
   module: {
@@ -52,12 +54,11 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'bundle-main.min.css',
+      filename: 'base.min.css',
     }),
     new CopyWebpackPlugin([
-      { from: 'src/img', to: 'img' },
-      { from: 'src/js/singular', to: 'js' },
-      { from: 'src/css/resardis-custom-nojs.css', to: 'css' },
+      { from: path.resolve(__dirname, 'src', 'img'), to: 'img' },
+      { from: path.resolve(__dirname, 'src', 'css', 'main-nojs.css'), to: 'css' },
     ]),
   ],
   optimization: {
@@ -71,7 +72,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: 'bundle-main.min.js',
+    filename: '[name].min.js',
     path: path.resolve(__dirname, 'static'),
   },
 };
