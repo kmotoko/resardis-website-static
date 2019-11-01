@@ -4,3 +4,4 @@ static/
 *.min.js
 g-analytics.js
 google-analytics.js
+modernizr.js

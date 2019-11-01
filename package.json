@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rvf static/* && yarn modernizr -c modernizr-config.json -d src/js/modernizr.min.js && yarn webpack",
-    "build-modernizr": "yarn modernizr -c modernizr-config.json -d src/js/modernizr.min.js",
+    "build": "rm -rvf static/* && yarn modernizr -c modernizr-config.json -d src/js/modernizr.js && yarn webpack",
+    "build-modernizr": "yarn modernizr -c modernizr-config.json -d src/js/modernizr.js",
     "lint-css": "yarn stylelint '**/*.css'",
     "lint-css-fix": "yarn stylelint '**/*.css' --fix",
     "lint-js": "yarn eslint .",

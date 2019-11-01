@@ -1,3 +1,3 @@
 // JS
 import 'lazysizes';
-import './js/modernizr.min.js';
+import './js/modernizr.js';
