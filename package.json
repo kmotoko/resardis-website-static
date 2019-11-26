@@ -1,15 +1,15 @@
 {
   "name": "resardis-website-static",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rvf static/* && yarn modernizr -c modernizr-config.json -d src/js/modernizr.js && yarn webpack",
-    "build-modernizr": "yarn modernizr -c modernizr-config.json -d src/js/modernizr.js",
-    "lint-css": "yarn stylelint '**/*.css'",
-    "lint-css-fix": "yarn stylelint '**/*.css' --fix",
-    "lint-js": "yarn eslint .",
-    "lint-js-fix": "yarn eslint --fix ."
+    "build": "rm -rvf build/* && yarn modernizr -c modernizr-config.json -d src/js/modernizr.js && yarn webpack",
+    "build:modernizr": "yarn modernizr -c modernizr-config.json -d src/js/modernizr.js",
+    "lint:css": "yarn stylelint '**/*.css'",
+    "lint:css:fix": "yarn stylelint '**/*.css' --fix",
+    "lint:js": "yarn eslint .",
+    "lint:js:fix": "yarn eslint --fix ."
   },
   "devDependencies": {
     "autoprefixer": "^9.7.0",
@@ -22,6 +22,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
