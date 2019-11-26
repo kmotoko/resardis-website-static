@@ -1,5 +1,5 @@
 node_modules/
-static/
+build/
 .git/
 *.min.js
 g-analytics.js
