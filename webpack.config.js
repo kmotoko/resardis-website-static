@@ -16,6 +16,12 @@ module.exports = {
   mode: 'production',
   module: {
     rules: [
+        {
+          test: /bootstrap\.native/,
+          use: {
+            loader: 'bootstrap.native-loader'
+        }
+      },
       {
         test: /\.css$/,
         use: [
