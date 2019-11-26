@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.0",
+    "bootstrap.native-loader": "^2.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
@@ -34,9 +35,8 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "bootstrap.native": "^2.0.27",
     "lazysizes": "^5.1.2",
-    "modernizr": "^3.8.0",
-    "popper.js": "^1.16.0"
+    "modernizr": "^3.8.0"
   }
 }
