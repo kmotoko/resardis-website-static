@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  plugins: [
-    require('autoprefixer'),
-  ],
+    plugins: [
+        require('autoprefixer'),
+    ],
 };
