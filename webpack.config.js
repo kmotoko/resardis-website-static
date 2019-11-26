@@ -4,6 +4,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
@@ -54,12 +55,25 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'base.min.css',
+      filename: '[name].[hash].min.css',
     }),
     new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, 'src', 'img'), to: 'img' },
-      { from: path.resolve(__dirname, 'src', 'css', 'main-nojs.css'), to: 'css' },
+      {
+          from: path.resolve(__dirname, 'src', 'img'),
+          to: path.resolve(__dirname, 'build', 'static', 'img'),
+          toType: 'dir'
+      },
+      {
+          from: path.resolve(__dirname, 'public'),
+          to: path.resolve(__dirname, 'build'),
+          toType: 'dir'
+      },
     ]),
+    new HtmlWebpackPlugin({
+      filename: path.resolve(__dirname, 'build', 'index.html'),
+      template: path.resolve(__dirname, 'public', 'index.html'),
+      chunks: ['performance', 'base', 'analytics'],
+    }),
   ],
   optimization: {
     minimizer: [
@@ -76,7 +90,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: '[name].min.js',
-    path: path.resolve(__dirname, 'static'),
+    filename: '[name].[hash].min.js',
+    path: path.resolve(__dirname, 'build', 'static/'),
   },
 };
