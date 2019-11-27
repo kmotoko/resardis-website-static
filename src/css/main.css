@@ -114,6 +114,10 @@ body {
   }
 }
 
+.newsletter {
+  background-color: #4d4d4d !important;
+}
+
 .navbar-brand {
   font-size: 1.5em;
 }
@@ -147,6 +151,18 @@ a.dropdown-item:hover {
 
 .nav-item > a.nav-link:hover {
   color: #f4a93b !important;
+}
+
+.btn-orange {
+  background-color: #f4a93b !important;
+}
+
+.btn-orange:hover {
+  background-color: #f08c1e !important;
+}
+
+.honeypot {
+  display: none !important;
 }
 
 .navbar-toggler {

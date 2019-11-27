@@ -219,40 +219,59 @@
         </div>
     </div>
 
-      <!-- Footer -->
-      <footer class="bg-dark text-center text-lightgrey my-0 py-5" id="footer">
-        <div class="container">
-          <div class="row justify-content-center social-media">
-            <div class="col-lg-auto">
-              <a href="https://www.facebook.com/resardis" aria-label="Resardis on Facebook">
-                <i class="fa-facebook-square"></i>
-              </a>
-              <a href="https://twitter.com/resardis" aria-label="Resardis on Twitter">
-                <i class="fa-twitter-square"></i>
-              </a>
-              <a href="https://www.instagram.com/resardis/" aria-label="Resardis on Instagram">
-                <i class="fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="row justify-content-center pb-3">
-            <div class="col-lg-auto">
-              Contact: <a href="mailto:hello@resardis.com">hello@resardis.com</a>
-            </div>
-          </div>
-
-          <div class="row text-uppercase justify-content-center pb-2">
-            <div class="col-lg-auto">
-              <a href="sitemap.xml">Site map</a> |
-              All Rights Reserved &#169; 2019
-              <a class="px-1" href="https://www.resardis.com/">
-                Resardis
-              </a>
-            </div>
+    <div class="newsletter text-center py-5 my-0" id="newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-auto">
+            <p class="display-4 font-weight-bold text-lightgrey pb-2">Join the <span class="text-orange">Newsletter</span></p>
+            <form name="newsletter" method="POST" data-netlify-honeypot="pit" data-netlify="true">
+              <div class="form-group honeypot">
+                <input name="pit" />
+              </div>
+              <div class="form-group">
+                <input name="email" type="email" class="form-control" placeholder="E-mail address" required />
+              </div>
+              <button type="submit" class="btn btn-lg btn-orange">Submit</button>
+            </form>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-lightgrey my-0 py-5" id="footer">
+      <div class="container">
+        <div class="row justify-content-center social-media">
+          <div class="col-lg-auto">
+            <a href="https://www.facebook.com/resardis" aria-label="Resardis on Facebook">
+              <i class="fa-facebook-square"></i>
+            </a>
+            <a href="https://twitter.com/resardis" aria-label="Resardis on Twitter">
+              <i class="fa-twitter-square"></i>
+            </a>
+            <a href="https://www.instagram.com/resardis/" aria-label="Resardis on Instagram">
+              <i class="fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center pb-3">
+          <div class="col-lg-auto">
+            Contact: <a href="mailto:hello@resardis.com">hello@resardis.com</a>
+          </div>
+        </div>
+
+        <div class="row text-uppercase justify-content-center pb-2">
+          <div class="col-lg-auto">
+            <a href="sitemap.xml">Site map</a> |
+            All Rights Reserved &#169; 2019
+            <a class="px-1" href="https://www.resardis.com/">
+              Resardis
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
