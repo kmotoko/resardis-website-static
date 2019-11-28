@@ -125,6 +125,25 @@
           </div>
         </div>
 
+        <div class="bg-dark text-center py-4 my-0" id="newsletter">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-auto">
+                <p class="display-4 font-weight-bold text-lightgrey pb-2">Join the <span class="text-orange">Newsletter</span></p>
+                <form class="px-3" name="newsletter" method="POST" data-netlify-honeypot="pit" data-netlify="true">
+                  <div class="form-group honeypot">
+                    <input name="pit" aria-label="pit" />
+                  </div>
+                  <div class="form-group">
+                    <input name="email" type="email" class="form-control" placeholder="E-mail address" aria-label="newsletter-email" required />
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-orange">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="jumbotron jumbotron-fluid info-full text-lightgrey py-3 my-0" id="decentralized">
           <div class="container">
             <div class="row align-items-center">
@@ -219,25 +238,6 @@
         </div>
     </div>
 
-    <div class="newsletter text-center py-4 my-0" id="newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-auto">
-            <p class="display-4 font-weight-bold text-lightgrey pb-2">Join the <span class="text-orange">Newsletter</span></p>
-            <form class="px-3" name="newsletter" method="POST" data-netlify-honeypot="pit" data-netlify="true">
-              <div class="form-group honeypot">
-                <input name="pit" aria-label="pit" />
-              </div>
-              <div class="form-group">
-                <input name="email" type="email" class="form-control" placeholder="E-mail address" aria-label="newsletter-email" required />
-              </div>
-              <button type="submit" class="btn btn-lg btn-orange">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Footer -->
     <footer class="bg-dark text-lightgrey py-3 my-0" id="footer">
       <div class="container">
@@ -253,7 +253,7 @@
               34467 Sarıyer, Istanbul/Turkey<br/>
             </p>
           </div>
-          <div class="col-md-4 social-media">
+          <div class="col-md-3 social-media">
             <h2><span class="text-orange">Follow</span> Us</h2>
             <div>
               <a href="https://www.facebook.com/resardis" aria-label="Resardis on Facebook">
