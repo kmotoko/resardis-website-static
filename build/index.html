@@ -76,7 +76,7 @@
     }
     </script>
 
-  <link href="static/base.1d52098a1af683407167.min.css" rel="stylesheet"></head>
+  <link href="static/base.c696a169b3c2eb2120fb.min.css" rel="stylesheet"></head>
 
   <body>
     <div>
@@ -118,10 +118,33 @@
           </div>
         </noscript>
 
-        <div class="jumbotron jumbotron-fluid mb-0 text-lightgrey motto-bg" id="entrance">
-          <div class="container pb-4">
-            <h1><span class="text-orange">Decentralized Exchange</span> on <span class="text-orange">Side-Chain</span></h1>
-            <h2 class="pt-2 text-black">Fast. Private. Secure.</h2>
+        <div class="entrance" id="entrance">
+          <div class="entrance-info">
+            <div class="container">
+              <h1 class="text-orange">Decentralized Exchange <span class="text-darkgrey">on</span> Side-Chain</h1>
+              <h2 class="pt-2 text-darkgrey">Fast. Private. Secure.</h2>
+              <p class="pt-4 text-center"><a href="#decentralized">Explore<br/>&#x21AF;</a></p>
+            </div>
+          </div>
+          <div class="w-100 h-100" id="particles-js"></div>
+        </div>
+
+        <div class="bg-dark text-center py-4 my-0" id="newsletter">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-auto">
+                <p class="display-4 font-weight-bold text-lightgrey pb-2">Join the <span class="text-orange">Newsletter</span></p>
+                <form class="px-3" name="newsletter" method="POST" data-netlify-honeypot="pit" data-netlify="true">
+                  <div class="form-group honeypot">
+                    <input name="pit" aria-label="pit" />
+                  </div>
+                  <div class="form-group">
+                    <input name="email" type="email" class="form-control" placeholder="E-mail address" aria-label="newsletter-email" required />
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-orange rounded-sm">Submit</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -148,7 +171,7 @@
           </div>
         </div>
 
-        <div class="jumbotron jumbotron-fluid text-lightgrey info-double py-3 my-0">
+        <div class="jumbotron jumbotron-fluid info-double py-3 my-0">
           <div class="container">
             <div class="row">
               <div class="col-lg-6" id="private">
@@ -219,53 +242,42 @@
         </div>
     </div>
 
-    <div class="newsletter text-center py-5 my-0" id="newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-auto">
-            <p class="display-4 font-weight-bold text-lightgrey pb-2">Join the <span class="text-orange">Newsletter</span></p>
-            <form name="newsletter" method="POST" data-netlify-honeypot="pit" data-netlify="true">
-              <div class="form-group honeypot">
-                <input name="pit" />
-              </div>
-              <div class="form-group">
-                <input name="email" type="email" class="form-control" placeholder="E-mail address" required />
-              </div>
-              <button type="submit" class="btn btn-lg btn-orange">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Footer -->
-    <footer class="bg-dark text-center text-lightgrey my-0 py-5" id="footer">
+    <footer class="bg-dark text-lightgrey py-3 my-0" id="footer">
       <div class="container">
-        <div class="row justify-content-center social-media">
-          <div class="col-lg-auto">
-            <a href="https://www.facebook.com/resardis" aria-label="Resardis on Facebook">
-              <i class="fa-facebook-square"></i>
-            </a>
-            <a href="https://twitter.com/resardis" aria-label="Resardis on Twitter">
-              <i class="fa-twitter-square"></i>
-            </a>
-            <a href="https://www.instagram.com/resardis/" aria-label="Resardis on Instagram">
-              <i class="fa-instagram"></i>
-            </a>
+        <div class="row justify-content-around px-2">
+          <div class="col-md-auto contact">
+            <h2><span class="text-orange">Contact</span> Us</h2>
+            <span class="font-italic">E-mail</span>
+            <p><a href="mailto:hello@resardis.com">hello@resardis.com</a></p>
+            <span class="font-italic">Address</span>
+            <p>
+              Istanbul Technical University<br/>
+              ARI3 Teknokent, ITU Çekirdek<br/>
+              34467 Sarıyer, Istanbul/Turkey<br/>
+            </p>
+          </div>
+          <div class="col-md-auto social-media">
+            <h2><span class="text-orange">Follow</span> Us</h2>
+            <div>
+              <a href="https://www.facebook.com/resardis" aria-label="Resardis on Facebook">
+                <i class="fa-facebook-square"></i>
+              </a>
+              <a href="https://twitter.com/resardis" aria-label="Resardis on Twitter">
+                <i class="fa-twitter-square"></i>
+              </a>
+              <a href="https://www.instagram.com/resardis/" aria-label="Resardis on Instagram">
+                <i class="fa-instagram"></i>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="row justify-content-center pb-3">
-          <div class="col-lg-auto">
-            Contact: <a href="mailto:hello@resardis.com">hello@resardis.com</a>
-          </div>
-        </div>
-
-        <div class="row text-uppercase justify-content-center pb-2">
-          <div class="col-lg-auto">
+        <div class="row justify-content-center py-3">
+          <div class="col-lg-auto text-center">
             <a href="sitemap.xml">Site map</a> |
-            All Rights Reserved &#169; 2019
-            <a class="px-1" href="https://www.resardis.com/">
+            Copyright &#169; 2019
+            <a href="https://www.resardis.com/">
               Resardis
             </a>
           </div>
@@ -273,5 +285,7 @@
       </div>
     </footer>
 
-  <script type="text/javascript" src="static/base.1d52098a1af683407167.min.js"></script><script type="text/javascript" src="static/performance.1d52098a1af683407167.min.js"></script><script type="text/javascript" src="static/analytics.1d52098a1af683407167.min.js"></script></body>
+    <script type="text/javascript" src="static/g-analytics.js" defer></script>
+
+  <script type="text/javascript" src="static/base.c696a169b3c2eb2120fb.min.js"></script><script type="text/javascript" src="static/home.c696a169b3c2eb2120fb.min.js"></script></body>
 </html>
