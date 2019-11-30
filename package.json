@@ -12,8 +12,14 @@
     "lint:js:fix": "yarn eslint --fix ."
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "autoprefixer": "^9.7.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
     "bootstrap.native-loader": "^2.0.0",
+    "browserslist": "^4.7.3",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
@@ -37,6 +43,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap.native": "^2.0.27",
     "lazysizes": "^5.1.2",
-    "modernizr": "^3.8.0"
+    "modernizr": "^3.8.0",
+    "particles.js": "^2.0.0"
   }
 }
