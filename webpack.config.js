@@ -10,12 +10,16 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
     entry: {
         base: path.resolve(__dirname, 'src', 'base.js'),
-        performance: path.resolve(__dirname, 'src', 'performance.js'),
-        analytics: path.resolve(__dirname, 'src', 'analytics.js'),
+        home: path.resolve(__dirname, 'src', 'home.js'),
     },
     mode: 'production',
     module: {
         rules: [
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                loader: 'babel-loader',
+            },
             {
                 test: /bootstrap\.native/,
                 use: {
@@ -74,11 +78,16 @@ module.exports = {
                 to: path.resolve(__dirname, 'build'),
                 toType: 'dir',
             },
+            {
+                from: path.resolve(__dirname, 'src', 'js', 'g-analytics.js'),
+                to: path.resolve(__dirname, 'build', 'static'),
+                toType: 'dir',
+            },
         ]),
         new HtmlWebpackPlugin({
             filename: path.resolve(__dirname, 'build', 'index.html'),
             template: path.resolve(__dirname, 'public', 'index.html'),
-            chunks: ['performance', 'base', 'analytics'],
+            chunks: ['base', 'home'],
         }),
     ],
     optimization: {
