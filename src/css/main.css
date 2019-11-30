@@ -29,6 +29,10 @@ body {
   color: #ececec !important;
 }
 
+.text-darkgrey {
+  color: #454545 !important;
+}
+
 .text-orange {
   color: #f4a93b !important;
 }
@@ -44,6 +48,42 @@ body {
 
 .display-4 {
   font-size: 3rem !important;
+}
+
+#entrance {
+  background-color: #efefef !important;
+  position: relative;
+  z-index: 100;
+  height: 95vh;
+}
+
+#entrance .entrance-info {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+}
+
+#entrance a {
+  font-size: 2em;
+  color: #000;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  text-decoration: none;
+}
+
+#entrance a:link,
+#entrance a:visited,
+#entrance a:hover,
+#entrance a:active {
+  text-decoration: none;
+}
+
+#entrance a:hover {
+  color: #f08c1e;
+}
+
+#particles-js canvas {
+  display: block;
 }
 
 .jumbotron-fluid {
@@ -112,10 +152,6 @@ body {
     width: 100%;
     height: auto;
   }
-}
-
-.newsletter {
-  background-color: #4d4d4d !important;
 }
 
 .navbar-brand {
@@ -204,19 +240,3 @@ a.dropdown-item:hover {
 }
 
 /* Lazysizes.js End */
-
-.webp .motto-bg {
-  background-color: #4d4d4d !important;
-  background-image: url("../img/motto-bg.webp");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.no-webp .motto-bg {
-  background-color: #4d4d4d !important;
-  background-image: url("../img/motto-bg.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
