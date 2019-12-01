@@ -42,8 +42,8 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap.native": "^2.0.27",
+    "core-js": "3",
     "lazysizes": "^5.1.2",
-    "modernizr": "^3.8.0",
-    "particles.js": "^2.0.0"
+    "modernizr": "^3.8.0"
   }
 }
