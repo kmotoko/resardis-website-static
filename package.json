@@ -4,12 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rvf build/* && yarn modernizr -c modernizr-config.json -d src/js/modernizr.js && yarn webpack",
-    "build:modernizr": "yarn modernizr -c modernizr-config.json -d src/js/modernizr.js",
+    "build": "yarn cleanup && yarn build:modernizr && yarn build:webpack && yarn build:jekyll",
+    "build:webpack": "NODE_ENV=production yarn webpack",
+    "build:modernizr": "NODE_ENV=production yarn modernizr -c modernizr-config.json -d _src/js/modernizr.js",
+    "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter --trace",
     "lint:css": "yarn stylelint '**/*.css'",
     "lint:css:fix": "yarn stylelint '**/*.css' --fix",
     "lint:js": "yarn eslint .",
-    "lint:js:fix": "yarn eslint --fix ."
+    "lint:js:fix": "yarn eslint --fix .",
+    "cleanup": "rm -rvf ./build/ ./_site/ ./assets/"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
