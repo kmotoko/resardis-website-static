@@ -9,8 +9,8 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     entry: {
-        base: path.resolve(__dirname, 'src', 'base.js'),
-        home: path.resolve(__dirname, 'src', 'home.js'),
+        base: path.resolve(__dirname, '_src', 'base.js'),
+        home: path.resolve(__dirname, '_src', 'home.js'),
     },
     mode: 'production',
     module: {
@@ -69,24 +69,24 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             {
-                from: path.resolve(__dirname, 'src', 'img'),
-                to: path.resolve(__dirname, 'build', 'static', 'img'),
+                from: path.resolve(__dirname, '_src', 'img'),
+                to: path.resolve(__dirname, 'assets', 'img'),
                 toType: 'dir',
             },
             {
-                from: path.resolve(__dirname, 'public'),
-                to: path.resolve(__dirname, 'build'),
+                from: path.resolve(__dirname, '_src', 'favicons'),
+                to: path.resolve(__dirname, 'assets', 'favicons'),
                 toType: 'dir',
             },
             {
-                from: path.resolve(__dirname, 'src', 'js', 'g-analytics.js'),
-                to: path.resolve(__dirname, 'build', 'static'),
+                from: path.resolve(__dirname, '_src', 'js', 'g-analytics.js'),
+                to: path.resolve(__dirname, 'assets'),
                 toType: 'dir',
             },
         ]),
         new HtmlWebpackPlugin({
-            filename: path.resolve(__dirname, 'build', 'index.html'),
-            template: path.resolve(__dirname, 'public', 'index.html'),
+            filename: path.resolve(__dirname, '_layouts', 'default.html'),
+            template: path.resolve(__dirname, '_src/template', 'default.html'),
             chunks: ['base', 'home'],
         }),
     ],
@@ -139,6 +139,7 @@ module.exports = {
     },
     output: {
         filename: '[name].[hash].min.js',
-        path: path.resolve(__dirname, 'build', 'static/'),
+        path: path.resolve(__dirname, 'assets/'),
+        publicPath: '/assets/',
     },
 };
