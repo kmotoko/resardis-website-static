@@ -161,3 +161,7 @@ build-iPhoneSimulator/
 .rvmrc
 
 # End of https://www.gitignore.io/api/ruby,jekyll
+
+# Custom webpack + jekyll workflow
+/build/
+/assets/
