@@ -14,6 +14,9 @@ task :test do
             "resardis.com",
             "www.resardis.com"
         ],
+        :url_ignore => [
+            "#"  # ignore dropdown hrefs
+        ],
          # 999=Request Denied Error, might happen if the server thinks you are a bot
         :http_status_ignore => [999],
         :validation => {
