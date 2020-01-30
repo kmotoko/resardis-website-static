@@ -8,6 +8,8 @@
     "build:webpack": "NODE_ENV=production yarn webpack",
     "build:modernizr": "NODE_ENV=production yarn modernizr -c modernizr-config.json -d _src/js/modernizr.js",
     "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter --trace",
+    "test:jekyll": "yarn cleanup && yarn build:modernizr && yarn build:webpack && JEKYLL_ENV=production bundle exec rake test",
+    "serve:jekyll": "yarn cleanup && yarn build:modernizr && yarn build:webpack && JEKYLL_ENV=development bundle exec jekyll serve",
     "lint:css": "yarn stylelint '**/*.css'",
     "lint:css:fix": "yarn stylelint '**/*.css' --fix",
     "lint:js": "yarn eslint .",
