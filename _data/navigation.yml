@@ -1,0 +1,49 @@
+- id: "home"
+  name:
+    en: "Home"
+  link:
+    en: "/"
+  invisible: false
+- id: "features"
+  name:
+    en: "Features"
+  link:
+    en: "#"
+  invisible: false
+  subitem:
+    - id: "decentralized"
+      name:
+        en: "Decentralized"
+      link:
+        en: "#decentralized"
+      invisible: false
+    - id: "private"
+      name:
+        en: "Private"
+      link:
+        en: "#private"
+      invisible: false
+    - id: "secure"
+      name:
+        en: "Secure"
+      link:
+        en: "#secure"
+      invisible: false
+    - id: "sidechain"
+      name:
+        en: "Side-Chain"
+      link:
+        en: "#sidechain"
+      invisible: false
+- id: "articles"
+  name:
+    en: "Articles"
+  link:
+    en: "/articles/"
+  invisible: false
+- id: "contact"
+  name:
+    en: "Contact"
+  link:
+    en: "#footer"
+  invisible: false

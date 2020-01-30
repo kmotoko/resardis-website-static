@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  {% include head.html %}
+  <link href="/assets/base.3cc3e66b2606893eaece.min.css" rel="stylesheet"></head>
+
+  <body>
+    <div>
+      {% include navigation.html %}
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    {%- if site.analytics.google.name and site.analytics.google.dir %}
+    {%- assign gsource = site.analytics.google.dir | append: site.analytics.google.name -%}
+    <script type="text/javascript" src="{{- gsource | strip_html | strip_newlines | uri_escape | relative_url -}}" defer></script>
+    {%- endif %}
+  <script type="text/javascript" src="/assets/base.3cc3e66b2606893eaece.min.js"></script><script type="text/javascript" src="/assets/home.3cc3e66b2606893eaece.min.js"></script></body>
+</html>
