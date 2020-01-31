@@ -1,3 +1,16 @@
 ---
 layout: default
 ---
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-auto text-center">
+      <h1 class="display-4 font-weight-bold text-orange mt-5">404</h1>
+      <h2>{{- site.data.i18n.pagenotfound["en"] | strip_html | strip_newlines | xml_escape -}}</h2>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-auto text-justify my-4">
+      {{ page.content }}
+    </div>
+  </div>
+</div>
