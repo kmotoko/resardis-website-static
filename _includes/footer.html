@@ -10,34 +10,42 @@
           </span> {{ site.data.i18n.contact["en"][1] | strip_html | strip_newlines | xml_escape -}}
         </h2>
         {%- endif %}
-        {%- if site.data.i18n.email["en"] %}
-        <span class="font-italic">
-          {{- site.data.i18n.email["en"] | strip_html | strip_newlines | xml_escape -}}
-        </span>
-        {%- endif %}
-        {%- if site.email %}
-        <p>
-          <a href="{{- 'mailto:' | append: site.email | strip_html | strip_newlines | xml_escape -}}">
-            {{- site.email | strip_html | strip_newlines | xml_escape -}}
-          </a>
-        </p>
-        {%- endif %}
-        {%- if site.data.i18n.address["en"][0] %}
-        <span class="font-italic">
-          {{- site.data.i18n.address["en"][0] | strip_html | strip_newlines | xml_escape -}}
-        </span>
-        {%- endif %}
-        <p>
-          {%- if site.data.i18n.address["en"][1] %}
-          {{- site.data.i18n.address["en"][1] | strip_html | strip_newlines | xml_escape -}}<br/>
+        <div class="contact-email">
+          {%- if site.data.i18n.email["en"] %}
+          <small class="font-italic">
+            {{- site.data.i18n.email["en"] | strip_html | strip_newlines | xml_escape -}}
+          </small>
           {%- endif %}
-          {%- if site.data.i18n.address["en"][2] %}
-          {{- site.data.i18n.address["en"][2] | strip_html | strip_newlines | xml_escape -}}<br/>
+          {%- if site.email %}
+          <p>
+            <small>
+            <a href="{{- 'mailto:' | append: site.email | strip_html | strip_newlines | xml_escape -}}">
+              {{- site.email | strip_html | strip_newlines | xml_escape -}}
+            </a>
+            </small>
+          </p>
           {%- endif %}
-          {%- if site.data.i18n.address["en"][3] %}
-          {{- site.data.i18n.address["en"][3] | strip_html | strip_newlines | xml_escape -}}<br/>
+        </div>
+        <div class="contact-address">
+          {%- if site.data.i18n.address["en"][0] %}
+          <small class="font-italic">
+            {{- site.data.i18n.address["en"][0] | strip_html | strip_newlines | xml_escape -}}
+          </small>
           {%- endif %}
-        </p>
+          <p>
+            <small>
+            {%- if site.data.i18n.address["en"][1] %}
+            {{- site.data.i18n.address["en"][1] | strip_html | strip_newlines | xml_escape -}}<br/>
+            {%- endif %}
+            {%- if site.data.i18n.address["en"][2] %}
+            {{- site.data.i18n.address["en"][2] | strip_html | strip_newlines | xml_escape -}}<br/>
+            {%- endif %}
+            {%- if site.data.i18n.address["en"][3] %}
+            {{- site.data.i18n.address["en"][3] | strip_html | strip_newlines | xml_escape -}}<br/>
+            {%- endif %}
+            </small>
+          </p>
+        </div>
       </div>
       <div class="col-md-auto social-media">
         <h2>
@@ -67,19 +75,21 @@
 
     <div class="row justify-content-center py-3">
       <div class="col-lg-auto text-center">
-        {% if site.data.i18n.sitemap["en"] -%}
-        <a href="{{- '/sitemap.xml' | strip_html | strip_newlines | uri_escape | absolute_url -}}">
-          {{- site.data.i18n.sitemap["en"] | strip_html | strip_newlines | xml_escape -}}
-        </a> |
-        {%- endif %}
-        {% if site.data.i18n.copyright["en"] -%}
-        {{- site.data.i18n.copyright["en"] | strip_html | strip_newlines | xml_escape }} &#169; 2019 - 2020
-        {%- endif %}
-        {% if site.data.organization.name and site.url -%}
-        <a href="{{- '/' | strip_html | strip_newlines | uri_escape | absolute_url -}}">
-          {{- site.data.organization.name | strip_html | strip_newlines | xml_escape -}}
-        </a>
-        {%- endif %}
+        <small>
+          {% if site.data.i18n.sitemap["en"] -%}
+          <a href="{{- '/sitemap.xml' | strip_html | strip_newlines | uri_escape | absolute_url -}}">
+            {{- site.data.i18n.sitemap["en"] | strip_html | strip_newlines | xml_escape -}}
+          </a> |
+          {%- endif %}
+          {% if site.data.i18n.copyright["en"] -%}
+          {{- site.data.i18n.copyright["en"] | strip_html | strip_newlines | xml_escape }} &#169; 2019 - 2020
+          {%- endif %}
+          {% if site.data.organization.name and site.url -%}
+          <a href="{{- '/' | strip_html | strip_newlines | uri_escape | absolute_url -}}">
+            {{- site.data.organization.name | strip_html | strip_newlines | xml_escape -}}
+          </a>
+          {%- endif %}
+        </small>
       </div>
     </div>
   </div>
