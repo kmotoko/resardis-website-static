@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark py-2 text-uppercase font-weight-bold">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark pt-2 pb-3 text-uppercase font-weight-bold">
   <div class="container">
     {% if site.thumbnail.base and site.thumbnail.header_logo.dir and site.thumbnail.header_logo.name and site.data.organization.name -%}
     {%- assign headerlogo = site.thumbnail.base | append: site.thumbnail.header_logo.dir | append: site.thumbnail.header_logo.name | append: '.png' -%}
@@ -34,6 +34,13 @@
             {%- endunless -%}
             {%- endfor -%}
           </div>
+        </li>
+        {%- endif %}
+        {% if my_page.id == "articles" and my_page.link['en'] and my_page.name["en"] -%}
+        <li class="nav-item">
+          <a class="nav-link" href="{{- my_page.link['en'] | strip_html | strip_newlines | uri_escape -}}">
+            {{- my_page.name["en"] | strip_html | strip_newlines | xml_escape -}}
+          </a>
         </li>
         {%- endif %}
         {% if my_page.id == "contact" and my_page.link['en'] and my_page.name["en"] -%}
