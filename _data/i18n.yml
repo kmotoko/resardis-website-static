@@ -12,7 +12,7 @@ home:
   landing:
     en: ["Decentralized Exchange ", "on", " Side-Chain", "Fast. Private. Secure.", "Explore"]
   news:
-    en: ["Join the", "Newsletter", "E-mail address", "Submit"]
+    en: ["Join the", " Newsletter", "E-mail address", "Submit"]
   decentralized:
     title:
       en: "Decentralized"
@@ -41,3 +41,13 @@ sitemap:
   en: "Site map"
 copyright:
   en: "Copyright"
+pagenotfound:
+  en: "Page Not Found"
+dateformat:
+  en: "%b %-d, %Y"
+aboutauthor:
+  en: "About the Author"
+pagination:
+  en: ["Prev", "Next"]
+share:
+  en: "Share On"
