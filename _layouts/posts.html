@@ -1,3 +1,86 @@
 ---
 layout: default
 ---
+<div class="container pt-4 pb-5">
+  <article class="post">
+    <header>
+      {% if page.title -%}
+      {%- assign ptitle = page.title | strip_html | strip_newlines | xml_escape -%}
+      <h1 class="text-orange">{{- ptitle -}}</h1>
+      {%- endif %}
+      <p class="text-midgrey">
+        {% if page.date -%}
+        <time>
+          {{- page.date | date: site.data.i18n.dateformat["en"] | strip_html | strip_newlines | xml_escape -}}
+        </time>
+        {%- endif %}
+        {% if site.data.author.name -%}
+        &nbsp;&#8226;&nbsp;
+        {%- assign sauthor = site.data.author.name | strip_html | strip_newlines | xml_escape -%}
+        <span>{{- sauthor -}}</span>
+        {%- endif %}
+      </p>
+      {% if page.thumbnail.name -%}
+      {%- assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+      {%- assign thumb_sq = page.thumbnail.name | append: site.thumbnail.square_ext | strip_html | strip_newlines | uri_escape -%}
+      {%- assign thumb_mid = page.thumbnail.name | append: site.thumbnail.mid_ext | strip_html | strip_newlines | uri_escape -%}
+      {%- assign thumb_wide = page.thumbnail.name | append: site.thumbnail.wide_ext | strip_html | strip_newlines | uri_escape -%}
+      {%- assign thumb_alt = page.title | strip_html | strip_newlines | xml_escape -%}
+      <div class="post-image-wrapper">
+        ​<picture>
+          {%- if page.thumbnail.webp -%}
+          <source media="(max-width: 600px)" srcset="{{- thumb_base | append: site.thumbnail.square | append: thumb_sq | append: '.webp' | relative_url -}}" type="image/webp">
+          <source media="(max-width: 800px)" srcset="{{- thumb_base | append: site.thumbnail.mid | append: thumb_mid | append: '.webp' | relative_url -}}" type="image/webp">
+          <source srcset="{{- thumb_base | append: site.thumbnail.wide | append: thumb_wide | append: '.webp' | relative_url -}}" type="image/webp">
+          {%- endif -%}
+          <source media="(max-width: 600px)" srcset="{{- thumb_base | append: site.thumbnail.square | append: thumb_sq | append: '.jpg' | relative_url -}}" type="image/jpeg">
+          <source media="(max-width: 800px)" srcset="{{- thumb_base | append: site.thumbnail.mid | append: thumb_mid | append: '.jpg' | relative_url -}}" type="image/jpeg">
+          <source srcset="{{- thumb_base | append: site.thumbnail.wide | append: thumb_wide | append: '.jpg'| relative_url -}}" type="image/jpeg">
+          <img src="{{- thumb_base | append: site.thumbnail.wide | append: thumb_wide | append: '.jpg' | relative_url -}}" alt="{{- thumb_alt -}}">
+        </picture>
+      </div>
+      {%- endif %}
+      {% if page.summary -%}
+      <p class="text-justify font-weight-bold pt-2">
+        {{ page.summary | strip_html | strip_newlines | xml_escape }}
+      </p>
+      {%- endif %}
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    {% include calltoaction.html %}
+
+    {% if site.data.author.shortbio and site.data.author.name -%}
+    <div class="post-author row py-4">
+      <div class="col-lg-12 pb-2 font-weight-bold">
+        <h2>{{- site.data.i18n.aboutauthor["en"] | strip_html | strip_newlines | xml_escape -}}</h2>
+      </div>
+      <div class="col-sm-3 p-2 post-author-image">
+        {% if site.data.author.author_image and site.data.author.author_about -%}
+        {%- assign img_base = site.thumbnail.base | append: site.data.author.author_image -%}
+        {%- assign img_webp = img_base | append: '.webp' | strip_html | strip_newlines | uri_escape -%}
+        {%- assign img_jpg = img_base | append: '.jpg' | strip_html | strip_newlines | uri_escape -%}
+        {%- assign author_fullname = site.data.author.name | strip_html | strip_newlines | xml_escape -%}
+        ​<picture>
+          <source srcset="{{- img_webp | relative_url -}}" type="image/webp">
+          <source srcset="{{- img_jpg | relative_url -}}" type="image/jpeg">
+          <img src="{{- img_jpg | relative_url -}}" class="user-picture" alt="{{- author_fullname -}}">
+        </picture>
+        {%- endif %}
+      </div>
+      <div class="col-sm-9 post-author-info">
+        <p class="user-name mb-1 mt-1">
+          {{ site.data.author.name | strip_html | strip_newlines | xml_escape }}
+        </p>
+        <p class="user-shortbio text-justify mb-1">
+          {{ site.data.author.shortbio | strip_html | strip_newlines | xml_escape }}
+        </p>
+      </div>
+    </div>
+    {%- endif %}
+
+  </article>
+</div>
