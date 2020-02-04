@@ -23,6 +23,10 @@ a {
   color: $gray-300;
 }
 
+.text-midgrey {
+  color: $gray-600;
+}
+
 .text-darkgrey {
   color: $gray-700;
 }
@@ -43,12 +47,61 @@ a {
   hyphens: auto;
 
   p {
-    hyphens: auto;
+    hyphens: auto !important;
   }
 }
 
 .push-footer {
   flex: 1 0 auto;
+}
+
+/**
+ * Blockquotes
+ */
+
+blockquote {
+  color: $gray-600;
+  padding-left: map-get($spacers, 4);
+  padding-right: map-get($spacers, 2);
+  font-size: $blockquote-font-size;
+}
+
+/**
+ * Code formatting
+ */
+
+pre {
+  display: block;
+  padding-top: map-get($spacers, 2);
+  padding-bottom: map-get($spacers, 2);
+  padding-left: map-get($spacers, 2);
+  padding-right: map-get($spacers, 2);
+  text-align: left;
+  overflow-x: auto;
+
+  // rouge adds a table if line numbers are shown
+  table {
+    margin-left: 0;
+    // there is a second pre element when rouge outputs code
+    // bootstrap calculation results in double scaling-down
+    // normalize it back to the intended size
+    pre {
+      font-size: $font-size-base * ($code-font-size / 100%);
+    }
+  }
+}
+
+pre.highlight,
+figure.highlight,
+code.highlighter-rouge {
+  background-color: darken($body-bg-grey, 3%);
+}
+
+code.highlighter-rouge {
+  padding-top: map-get($spacers, 2);
+  padding-bottom: map-get($spacers, 1) / 2;
+  padding-left: map-get($spacers, 1);
+  padding-right: map-get($spacers, 1);
 }
 
 // HOME PAGE
@@ -149,6 +202,97 @@ a {
     @media only all and (min-width: 992px) {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+// ARCHIVE-POSTLIST
+.post-list-image-wrapper {
+  font-size: 0;
+  line-height: 0;
+}
+
+// POST
+
+.post {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+  .post-image-wrapper {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .post-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: left;
+    }
+
+    p {
+      text-align: justify;
+      hyphens: auto !important;
+    }
+  }
+
+  .post-author {
+    .post-author-image {
+      text-align: center;
+
+      .user-picture {
+        border-radius: 50%;
+        width: 75%;
+      }
+    }
+
+    .post-author-info {
+      .user-name {
+        font-size: $font-size-base * 1.25;
+      }
+
+      .user-shortbio {
+        color: $gray-600;
+        font-size: $font-size-base * 0.9;
+      }
+    }
+  }
+}
+
+// CALL TO ACTION
+.calltoaction {
+  line-height: 1.2;
+
+  .calltoaction-social {
+    font-size: 3.25rem;
+
+    .calltoaction-facebook {
+      color: #3b5998;
+    }
+
+    .calltoaction-twitter {
+      color: #1da1f2;
+    }
+
+    .calltoaction-reddit {
+      color: #ff4500;
+    }
+
+    .calltoaction-linkedin {
+      color: #4875b4;
+    }
+
+    .calltoaction-telegram {
+      color: #08c;
     }
   }
 }
