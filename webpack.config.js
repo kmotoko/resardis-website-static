@@ -12,7 +12,6 @@ module.exports = {
         base: path.resolve(__dirname, '_src', 'base.js'),
         home: path.resolve(__dirname, '_src', 'home.js'),
     },
-    mode: 'production',
     module: {
         rules: [
             {
@@ -85,11 +84,20 @@ module.exports = {
                 toType: 'dir',
             },
         ]),
-        new HtmlWebpackPlugin({
-            filename: path.resolve(__dirname, '_layouts', 'default.html'),
-            template: path.resolve(__dirname, '_src/template', 'default.html'),
-            chunks: ['base', 'home'],
-        }),
+        new HtmlWebpackPlugin(
+            {
+                filename: path.resolve(__dirname, '_layouts', 'default.html'),
+                template: path.resolve(__dirname, '_src/template', 'default.html'),
+                chunks: ['base'],
+            }
+        ),
+        new HtmlWebpackPlugin(
+            {
+                filename: path.resolve(__dirname, '_layouts', 'default-home.html'),
+                template: path.resolve(__dirname, '_src/template', 'default-home.html'),
+                chunks: ['base', 'home'],
+            }
+        ),
     ],
     optimization: {
         minimizer: [
@@ -133,7 +141,7 @@ module.exports = {
                 parallel: true,
                 // Disable file caching
                 cache: false,
-                sourceMap: false, // Must be set to true if using source-maps in production
+                // sourceMap: false, // Must be set to true if using source-maps in production
             }),
             new OptimizeCSSAssetsPlugin({}),
         ],
@@ -142,5 +150,16 @@ module.exports = {
         filename: '[name].[hash].min.js',
         path: path.resolve(__dirname, 'assets/'),
         publicPath: '/assets/',
+    },
+    devServer: {
+      contentBase: [
+        path.resolve(__dirname, '_site/'),
+      ],
+      hot: false,
+      writeToDisk: true,
+      watchOptions: {
+        aggregateTimeout: 1000,
+        poll: true
+      },
     },
 };
