@@ -59,7 +59,7 @@
 <!-- No JS warning -->
 {% if site.data.i18n.nojs["en"] -%}
 <noscript>
-  <div class="container text-center text-danger font-weight-bold mt-3">
+  <div class="container text-center text-danger font-weight-bold pt-2">
     <p>
       {{- site.data.i18n.nojs["en"] | strip_html | strip_newlines | xml_escape -}}
     </p>
