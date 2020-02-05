@@ -89,14 +89,14 @@ module.exports = {
                 filename: path.resolve(__dirname, '_layouts', 'default.html'),
                 template: path.resolve(__dirname, '_src/template', 'default.html'),
                 chunks: ['base'],
-            }
+            },
         ),
         new HtmlWebpackPlugin(
             {
                 filename: path.resolve(__dirname, '_layouts', 'default-home.html'),
                 template: path.resolve(__dirname, '_src/template', 'default-home.html'),
                 chunks: ['base', 'home'],
-            }
+            },
         ),
     ],
     optimization: {
@@ -152,14 +152,14 @@ module.exports = {
         publicPath: '/assets/',
     },
     devServer: {
-      contentBase: [
-        path.resolve(__dirname, '_site/'),
-      ],
-      hot: false,
-      writeToDisk: true,
-      watchOptions: {
-        aggregateTimeout: 1000,
-        poll: true
-      },
+        contentBase: [
+            path.resolve(__dirname, '_site/'),
+        ],
+        hot: false,
+        writeToDisk: true,
+        watchOptions: {
+            aggregateTimeout: 1000,
+            poll: true,
+        },
     },
 };
