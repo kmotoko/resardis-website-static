@@ -54,7 +54,7 @@
 
   "overrides": [
     {
-      "files": ["src/base.js", "src/home.js"],
+      "files": ["_src/base.js", "_src/home.js"],
       "parserOptions": {
         "sourceType": "module"
       }
