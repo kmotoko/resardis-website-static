@@ -1,6 +1,20 @@
 // CUSTOM VARIABLES - NOT IN BOOTSTRAP
 $body-bg-grey: #f7f7f7;
 
+$link-transition-duration: 0.3s;
+$link-timing-function: ease-in;
+
+$alt-font-size: 1rem;
+$alt-line-height: 1.4;  // where being compact is needed
+
+$social-media-icon-size: 3rem;
+$twitter-blue: #1da1f2;
+$facebook-blue: #3b5998;
+$reddit-red: #ff4500;
+$linkedin-blue: #4875b4;
+$telegram-blue: #08c;
+$social-media-icon-hover: 15%;  // used in darken/lighten on hover
+
 // BOOTSTRAP VARIABLES
 
 // Variables
@@ -194,7 +208,7 @@ $display4-size: 3.5rem;
 
 $display-line-height: $headings-line-height;
 
-$lead-font-size: $font-size-base * 1.1;
+$lead-font-size: $font-size-base * 1.125;
 $lead-font-weight: 300;
 
 $small-font-size: 82.5%;
@@ -202,6 +216,13 @@ $small-font-size: 82.5%;
 $blockquote-small-color: $gray-600;
 $blockquote-small-font-size: $small-font-size;
 $blockquote-font-size: $font-size-base * 0.9;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-link-color: $link-color;
+$btn-link-hover-color: $link-hover-color;
 
 // Navbar
 
