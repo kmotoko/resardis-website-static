@@ -224,9 +224,19 @@ code.highlighter-rouge {
     font-weight: bold;
   }
 
-  .post-image-wrapper {
-    font-size: 0;
-    line-height: 0;
+  .post-header {
+    .post-image-wrapper {
+      font-size: 0;
+      line-height: 0;
+    }
+
+    .post-header-author {
+      display: inline;
+    }
+
+    .post-header-time {
+      display: inline;
+    }
   }
 
   .post-content {
@@ -241,7 +251,7 @@ code.highlighter-rouge {
 
     p {
       text-align: justify;
-      hyphens: auto !important;
+      hyphens: auto;
     }
   }
 
