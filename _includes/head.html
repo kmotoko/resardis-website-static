@@ -100,9 +100,8 @@
 
 {{ favicons }}
 
-<!-- Structered data for rich snippets in Google etc. -->
 {% if page.layout == "home" -%}
   {% include _stdata/organization.html %}
-{% else if page.layout == "posts" -%}
+{% elsif page.layout == "posts" -%}
   {% include _stdata/article.html %}
 {%- endif %}
