@@ -15,8 +15,8 @@ img {
 }
 
 a {
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in;
+  transition-duration: $link-transition-duration;
+  transition-timing-function: $link-timing-function;
 }
 
 .text-lightgrey {
@@ -33,14 +33,6 @@ a {
 
 .text-orange {
   color: $orange;
-}
-
-.btn-orange {
-  background-color: $orange;
-}
-
-.btn-orange:hover {
-  background-color: lighten($orange, 15%);
 }
 
 .text-justify {
@@ -107,7 +99,6 @@ code.highlighter-rouge {
 // HOME PAGE
 
 .entrance {
-  background-color: $gray-100;
   position: relative;
   z-index: 100;
   height: 95vh;
@@ -119,18 +110,8 @@ code.highlighter-rouge {
   }
 
   a {
-    font-size: 1.75rem;
+    font-size: $font-size-base * 1.5;
     color: $black;
-  }
-
-  @media only all and (max-width: 576px) {
-    h1 {
-      font-size: 1.75rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
   }
 }
 
@@ -177,8 +158,6 @@ code.highlighter-rouge {
 }
 
 .info-double {
-  background-color: $gray-100;
-
   .info-title {
     position: relative;
     display: flex;
@@ -189,17 +168,17 @@ code.highlighter-rouge {
     width: 85%;
     height: auto;
 
-    @media only all and (min-width: 576px) {
+    @media only all and (min-width: map-get($grid-breakpoints, sm)) {
       width: 85%;
       height: auto;
     }
 
-    @media only all and (min-width: 768px) {
+    @media only all and (min-width: map-get($grid-breakpoints, md)) {
       width: 50%;
       height: auto;
     }
 
-    @media only all and (min-width: 992px) {
+    @media only all and (min-width: map-get($grid-breakpoints, lg)) {
       width: 100%;
       height: auto;
     }
@@ -208,6 +187,7 @@ code.highlighter-rouge {
 
 // ARCHIVE-POSTLIST
 .post-list-image-wrapper {
+  // fix extra text nodes
   font-size: 0;
   line-height: 0;
 }
@@ -226,6 +206,7 @@ code.highlighter-rouge {
 
   .post-header {
     .post-image-wrapper {
+      // fix extra text nodes
       font-size: 0;
       line-height: 0;
     }
@@ -261,18 +242,33 @@ code.highlighter-rouge {
 
       .user-picture {
         border-radius: 50%;
-        width: 75%;
+        width: 50%;
+        height: auto;
+
+        @media only all and (min-width: map-get($grid-breakpoints, sm)) {
+          width: 50%;
+        }
+
+        @media only all and (min-width: map-get($grid-breakpoints, md)) {
+          width: 85%;
+        }
+
+        @media only all and (min-width: map-get($grid-breakpoints, lg)) {
+          width: 75%;
+        }
       }
     }
 
     .post-author-info {
+      line-height: $alt-line-height;
+
       .user-name {
-        font-size: $font-size-base * 1.25;
+        font-size: $font-size-lg;
       }
 
       .user-shortbio {
         color: $gray-600;
-        font-size: $font-size-base * 0.9;
+        font-size: $font-size-sm;
       }
     }
   }
@@ -280,29 +276,49 @@ code.highlighter-rouge {
 
 // CALL TO ACTION
 .calltoaction {
-  line-height: 1.2;
+  line-height: $alt-line-height;
 
   .calltoaction-social {
-    font-size: 3.25rem;
+    font-size: $social-media-icon-size;
 
     .calltoaction-facebook {
-      color: #3b5998;
+      color: $facebook-blue;
+    }
+
+    .calltoaction-facebook:hover {
+      color: darken($facebook-blue, $social-media-icon-hover);
     }
 
     .calltoaction-twitter {
-      color: #1da1f2;
+      color: $twitter-blue;
+    }
+
+    .calltoaction-twitter:hover {
+      color: darken($twitter-blue, $social-media-icon-hover);
     }
 
     .calltoaction-reddit {
-      color: #ff4500;
+      color: $reddit-red;
+    }
+
+    .calltoaction-reddit:hover {
+      color: darken($reddit-red, $social-media-icon-hover);
     }
 
     .calltoaction-linkedin {
-      color: #4875b4;
+      color: $linkedin-blue;
+    }
+
+    .calltoaction-linkedin:hover {
+      color: darken($linkedin-blue, $social-media-icon-hover);
     }
 
     .calltoaction-telegram {
-      color: #08c;
+      color: $telegram-blue;
+    }
+
+    .calltoaction-telegram:hover {
+      color: darken($telegram-blue, $social-media-icon-hover);
     }
   }
 }
@@ -310,7 +326,7 @@ code.highlighter-rouge {
 // NAVIGATION BAR
 
 .navbar {
-  line-height: 1.3;
+  line-height: $alt-line-height;
 
   .navbar-brand {
     img {
@@ -319,7 +335,7 @@ code.highlighter-rouge {
   }
 
   .nav-item {
-    font-size: 1rem;
+    font-size: $alt-font-size;
 
     .nav-link {
       color: $gray-200;
@@ -338,12 +354,12 @@ code.highlighter-rouge {
   }
 
   .dropdown-menu {
-    font-size: 1rem;
-    line-height: 1.3;
+    font-size: $alt-font-size;
+    line-height: $alt-line-height;
 
     .dropdown-item {
-      font-size: 1rem;
-      line-height: 1.3;
+      font-size: $alt-font-size;
+      line-height: $alt-line-height;
     }
 
     .dropdown-item:hover {
@@ -356,10 +372,10 @@ code.highlighter-rouge {
 
 footer {
   flex-shrink: 0;
-  line-height: 1.2;
+  line-height: $alt-line-height;
 
   .social-media {
-    font-size: 2.75rem !important;
+    font-size: $social-media-icon-size;
   }
 }
 
