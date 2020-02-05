@@ -78,7 +78,7 @@ layout: default
       <div class="row">
         <div class="col-md-3 p-2 post-author-image">
           {% if author.author_image and author.author_about -%}
-          {%- assign img_base = site.thumbnail.base | append: author.author_image -%}
+          {%- assign img_base = site.thumbnail.base | append: site.thumbnail.author.dir | append: author.author_image -%}
           {%- assign img_webp = img_base | append: '.webp' | strip_html | strip_newlines | uri_escape -%}
           {%- assign img_jpg = img_base | append: '.jpg' | strip_html | strip_newlines | uri_escape -%}
           {%- assign author_fullname = author.name | strip_html | strip_newlines | xml_escape -%}

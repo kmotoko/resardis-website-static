@@ -55,6 +55,8 @@ thumbnail:
     dir: "logo/"
     width: 260
     height: 60
+  author:
+    dir: "author/"
 
 webmaster:
   google: "WAx55tvwpc9LjGmgGlXEEoa8WDekVR9gNwvbWu2LKSI" # Search console
