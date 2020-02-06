@@ -41,6 +41,13 @@ sitemap:
   en: "Site map"
 copyright:
   en: "Copyright"
+legal:
+  en: [
+  "The content of the website is licensed under",
+  "The code of this software is licensed under",
+  "unless otherwise stated.",
+  "by"
+  ]
 pagenotfound:
   en: "Page Not Found"
 dateformat:

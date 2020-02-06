@@ -90,6 +90,25 @@
           </a>
           {%- endif %}
         </small>
+        <br />
+        <small>
+        {% if site.gnu.shortname and site.gnu.url -%}
+          {{- site.data.i18n.legal["en"][1] | strip_html | strip_newlines | xml_escape -}}&nbsp;
+          <a rel="nofollow noreferrer noopener license" target="_blank" href="{{- site.gnu.url | strip_html | strip_newlines | uri_escape -}}" class="cc-licence">
+            {{- site.gnu.shortname | strip_html | strip_newlines | xml_escape -}}
+          </a>.
+        {%- endif %}
+        </small>
+        <br />
+        <small>
+        {% if site.cc.shortname and site.cc.url -%}
+          {{- site.data.i18n.legal["en"][0] | strip_html | strip_newlines | xml_escape -}}&nbsp;
+          <a rel="nofollow noreferrer noopener license" target="_blank" href="{{- site.cc.url | strip_html | strip_newlines | uri_escape -}}" class="cc-licence">
+            {{- site.cc.shortname | strip_html | strip_newlines | xml_escape -}}
+          </a>&nbsp;
+          {{- site.data.i18n.legal["en"][2] | strip_html | strip_newlines | xml_escape -}}
+        {%- endif %}
+        </small>
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
   "name": "resardis-website-static",
   "version": "0.4.1",
   "main": "index.js",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "yarn cleanup && yarn build:modernizr:dev && yarn build:webpack:dev && concurrently --kill-others 'yarn start:webpack:dev' 'yarn start:jekyll:dev'",
     "start:webpack:dev": "NODE_ENV=development webpack-dev-server --mode development",
