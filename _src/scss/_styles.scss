@@ -186,10 +186,21 @@ code.highlighter-rouge {
 }
 
 // ARCHIVE-POSTLIST
-.post-list-image-wrapper {
-  // fix extra text nodes
-  font-size: 0;
-  line-height: 0;
+
+.archive {
+  .archive-image-wrapper {
+    // fix extra text nodes
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .archive-noarticle {
+    background-color: $gray-100;
+  }
+
+  .fa-exclamation-circle {
+    font-size: $social-media-icon-size;
+  }
 }
 
 // POST

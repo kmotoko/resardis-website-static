@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<div class="container">
+<div class="container archive">
   <h1 class="font-weight-bold text-center pt-3">
     {{- page.title | strip_html | strip_newlines | xml_escape -}}
   </h1>
+
+  <p class="text-center"><small>{{- page.summary | strip_html | strip_newlines | xml_escape -}}</small></p>
 
   <main aria-label="Main Content">
     {% assign posts = site.posts -%}
@@ -26,7 +28,7 @@ layout: default
         </div>
         <div class="col-lg-4">
           {% if site.thumbnail.base and post.thumbnail.name -%}
-          <div class="post-list-image-wrapper">
+          <div class="archive-image-wrapper">
             <a href="{{- post.url | strip_html | strip_newlines | uri_escape | relative_url -}}">
               ​<picture>
                 {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
@@ -53,6 +55,13 @@ layout: default
         </div>
       </div>
     </article>
+    {%- else %}
+    <div class="text-center py-3 mb-5 archive-noarticle">
+      <i class="fa-exclamation-circle text-warning"></i>
+      <p class="mb-1">
+        {{- site.data.i18n.noarticle["en"] | strip_html | strip_newlines | xml_escape -}}
+      </p>
+    </div>
     {%- endfor %}
   </main>
 

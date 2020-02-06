@@ -58,3 +58,5 @@ pagination:
   en: ["Prev", "Next"]
 share:
   en: "Share On"
+noarticle:
+  en: "There are no published article yet."
