@@ -1,0 +1,190 @@
+---
+layout: default-home
+---
+
+<main aria-label="Main Content">
+  {% if site.thumbnail.home -%}
+  {%- assign thumb_home = site.thumbnail.home | strip_html | strip_newlines | uri_escape -%}
+  {%- endif -%}
+
+  <section>
+    <div class="entrance" id="entrance">
+      <div class="entrance-info">
+        <div class="container">
+          <h1 class="text-orange">
+            {{- site.data.i18n.home.landing["en"][0] | strip_html | strip_newlines | xml_escape -}}
+            <span class="text-darkgrey">
+              {{- site.data.i18n.home.landing["en"][1] | strip_html | strip_newlines | xml_escape -}}
+            </span>
+            {{- site.data.i18n.home.landing["en"][2] | strip_html | strip_newlines | xml_escape -}}
+          </h1>
+          <h2 class="pt-2 text-darkgrey">
+            {{- site.data.i18n.home.landing["en"][3] | strip_html | strip_newlines | xml_escape -}}
+          </h2>
+          <p class="pt-4 text-center">
+            <a href="#decentralized">
+              {{- site.data.i18n.home.landing["en"][4] | strip_html | strip_newlines | xml_escape -}}
+              <br/>&#x21AF;
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="w-100 h-100" id="particles-js"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-dark text-center py-4 my-0" id="newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-auto">
+            <p class="display-4 text-lightgrey pb-2">
+              {{- site.data.i18n.home.news["en"][0] | strip_html | strip_newlines | xml_escape -}}
+              <span class="text-orange">
+                {{- site.data.i18n.home.news["en"][1] | strip_html | strip_newlines | xml_escape -}}
+              </span>
+            </p>
+            <form class="px-3" name="newsletter" method="POST" data-netlify-honeypot="pit" data-netlify="true">
+              <div class="form-group honeypot">
+                <input name="pit" aria-label="pit" />
+              </div>
+              <div class="form-group">
+                <input name="email" type="email" class="form-control form-control-sm" placeholder="{{- site.data.i18n.home.news['en'][2] | strip_html | strip_newlines | xml_escape -}}" aria-label="newsletter-email" required />
+              </div>
+              <button type="submit" class="btn btn-lg btn-outline-warning rounded-sm">
+                {{- site.data.i18n.home.news["en"][3] | strip_html | strip_newlines | xml_escape -}}
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="jumbotron jumbotron-fluid info-full text-lightgrey py-3 my-0" id="decentralized">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-last">
+            <div class="info-overlay">
+              <div class="info-caption">
+                <h2 class="display-3">
+                  {{- site.data.i18n.home.decentralized.title["en"] | strip_html | strip_newlines | xml_escape -}}
+                </h2>
+              </div>
+              {% if site.thumbnail.base and thumb_home -%}
+              {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+              ​<picture>
+                <!-- Aspect ratio for base64 = 1:1 -->
+                <source data-srcset="{{- thumb_base | append: thumb_home | append: 'resardis-decentralized' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+                <source data-srcset="{{- thumb_base | append: thumb_home | append: 'resardis-decentralized' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
+                <img data-src="{{- thumb_base | append: thumb_home | append: 'resardis-decentralized' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="ml-auto d-block lazyload" alt="Decentralized infrastructure">
+              </picture>
+              {%- endif %}
+            </div>
+          </div>
+          <div class="col-lg-6 my-4 text-justify order-lg-first">
+            <p>
+              {{- site.data.i18n.home.decentralized.content["en"] | strip_html | strip_newlines | xml_escape -}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="jumbotron jumbotron-fluid info-double py-3 my-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" id="private">
+            <div class="row">
+              <div class="col-lg-6 info-title">
+                  <h2 class="display-3">
+                    {{- site.data.i18n.home.private.title["en"] | strip_html | strip_newlines | xml_escape -}}
+                  </h2>
+              </div>
+              <div class="col-lg-6">
+                {% if site.thumbnail.base and thumb_home -%}
+                {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+                ​<picture>
+                  <!-- Aspect ratio for base64 = 1:1 -->
+                  <source data-srcset="{{- thumb_base | append: thumb_home | append: 'resardis-privacy' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+                  <source data-srcset="{{- thumb_base | append: thumb_home | append: 'resardis-privacy' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
+                  <img data-src="{{- thumb_base | append: thumb_home | append: 'resardis-privacy' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="mx-auto d-block lazyload" alt="Decentralization provides privacy">
+                </picture>
+                {%- endif %}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 my-4 text-justify">
+                <p>
+                  {{- site.data.i18n.home.private.content["en"] | strip_html | strip_newlines | xml_escape -}}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" id="secure">
+            <div class="row">
+              <div class="col-lg-6 info-title">
+                  <h2 class="display-3">
+                    {{- site.data.i18n.home.secure.title["en"] | strip_html | strip_newlines | xml_escape -}}
+                  </h2>
+              </div>
+              <div class="col-lg-6">
+                {% if site.thumbnail.base and thumb_home -%}
+                {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+                ​<picture>
+                  <!-- Aspect ratio for base64 = 1:1 -->
+                  <source data-srcset="{{- thumb_base | append: thumb_home | append: 'resardis-security' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+                  <source data-srcset="{{- thumb_base | append: thumb_home | append: 'resardis-security' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
+                  <img data-src="{{- thumb_base | append: thumb_home | append: 'resardis-security' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="mx-auto d-block lazyload" alt="Decentralization provides security">
+                </picture>
+                {% endif %}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 my-4 text-justify">
+                <p>
+                  {{- site.data.i18n.home.secure.content["en"] | strip_html | strip_newlines | xml_escape -}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="jumbotron jumbotron-fluid info-full text-lightgrey py-3 my-0" id="sidechain">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-last">
+            <div class="info-overlay">
+              <div class="info-caption">
+                <h2 class="display-3">
+                  {{- site.data.i18n.home.sidechain.title["en"] | strip_html | strip_newlines | xml_escape -}}
+                </h2>
+              </div>
+              {% if site.thumbnail.base and thumb_home -%}
+              {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+              ​<picture>
+                <!-- Aspect ratio for base64 = 10:7 -->
+                <source data-srcset="{{- thumb_base | append: thumb_home | append: 'resardis-sidechain' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAACQAABgAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoKAAcAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+                <source data-srcset="{{- thumb_base | append: thumb_home | append: 'resardis-sidechain' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAQAAACbpRToAAAADElEQVQI12NgGHQAAACTAAEzTLuHAAAAAElFTkSuQmCC" type="image/png">
+                <img data-src="{{- thumb_base | append: thumb_home | append: 'resardis-sidechain' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAQAAACbpRToAAAADElEQVQI12NgGHQAAACTAAEzTLuHAAAAAElFTkSuQmCC" class="ml-auto d-block lazyload" alt="Resardis is built on the side-chain tech, a second layer solution">
+              </picture>
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-lg-6 my-4 text-justify order-lg-first">
+            <p>
+              {{- site.data.i18n.home.sidechain.content["en"] | strip_html | strip_newlines | xml_escape -}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -9,10 +9,9 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     entry: {
-        base: path.resolve(__dirname, 'src', 'base.js'),
-        home: path.resolve(__dirname, 'src', 'home.js'),
+        base: path.resolve(__dirname, '_src', 'base.js'),
+        home: path.resolve(__dirname, '_src', 'home.js'),
     },
-    mode: 'production',
     module: {
         rules: [
             {
@@ -27,11 +26,12 @@ module.exports = {
                 },
             },
             {
-                test: /\.css$/,
+                test: /\.(scss)$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'postcss-loader',
+                    'sass-loader',
                 ],
             },
             {
@@ -69,26 +69,35 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             {
-                from: path.resolve(__dirname, 'src', 'img'),
-                to: path.resolve(__dirname, 'build', 'static', 'img'),
+                from: path.resolve(__dirname, '_src', 'img'),
+                to: path.resolve(__dirname, 'assets', 'img'),
                 toType: 'dir',
             },
             {
-                from: path.resolve(__dirname, 'public'),
-                to: path.resolve(__dirname, 'build'),
+                from: path.resolve(__dirname, '_src', 'favicons'),
+                to: path.resolve(__dirname, 'assets', 'favicons'),
                 toType: 'dir',
             },
             {
-                from: path.resolve(__dirname, 'src', 'js', 'g-analytics.js'),
-                to: path.resolve(__dirname, 'build', 'static'),
+                from: path.resolve(__dirname, '_src', 'js', 'g-analytics.js'),
+                to: path.resolve(__dirname, 'assets'),
                 toType: 'dir',
             },
         ]),
-        new HtmlWebpackPlugin({
-            filename: path.resolve(__dirname, 'build', 'index.html'),
-            template: path.resolve(__dirname, 'public', 'index.html'),
-            chunks: ['base', 'home'],
-        }),
+        new HtmlWebpackPlugin(
+            {
+                filename: path.resolve(__dirname, '_layouts', 'default.html'),
+                template: path.resolve(__dirname, '_src/template', 'default.html'),
+                chunks: ['base'],
+            },
+        ),
+        new HtmlWebpackPlugin(
+            {
+                filename: path.resolve(__dirname, '_layouts', 'default-home.html'),
+                template: path.resolve(__dirname, '_src/template', 'default-home.html'),
+                chunks: ['base', 'home'],
+            },
+        ),
     ],
     optimization: {
         minimizer: [
@@ -132,13 +141,25 @@ module.exports = {
                 parallel: true,
                 // Disable file caching
                 cache: false,
-                sourceMap: false, // Must be set to true if using source-maps in production
+                // sourceMap: false, // Must be set to true if using source-maps in production
             }),
             new OptimizeCSSAssetsPlugin({}),
         ],
     },
     output: {
         filename: '[name].[hash].min.js',
-        path: path.resolve(__dirname, 'build', 'static/'),
+        path: path.resolve(__dirname, 'assets/'),
+        publicPath: '/assets/',
+    },
+    devServer: {
+        contentBase: [
+            path.resolve(__dirname, '_site/'),
+        ],
+        hot: false,
+        writeToDisk: true,
+        watchOptions: {
+            aggregateTimeout: 1000,
+            poll: true,
+        },
     },
 };

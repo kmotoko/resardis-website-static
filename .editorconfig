@@ -14,16 +14,25 @@ charset = utf-8
 max_line_length = 120
 
 # Use 2 spaces for the HTML and CSS files
-[*.{html,css}]
+[*.{html,css,scss}]
 indent_size = 2
 
+[*.{css,scss}]
+max_line_length = 79
+
 # The JSON files contain newlines inconsistently
-[*.json]
+[*.{json,yml}]
 indent_size = 2
 insert_final_newline = ignore
 
 # Minified JavaScript files shouldn't be changed
 [*.min.js]
+indent_style = ignore
+indent_size = ignore
+insert_final_newline = ignore
+
+# Minified CSS files shouldn't be changed
+[*.min.css]
 indent_style = ignore
 indent_size = ignore
 insert_final_newline = ignore

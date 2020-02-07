@@ -1,0 +1,24 @@
+name: "Resardis"
+facebook: "resardis"
+twitter: "resardis"
+instagram: "resardis"
+stdata:
+  alternateName: "Resardis Decentralized Cryptocurrency Exchange"
+  url: "https://www.resardis.com/"
+  logo: "https://www.resardis.com/assets/img/logo/resardis-logo-notext.png"
+  description: "Resardis is a Decentralized Cryptocurrency Exchange (DEX) using the side-chain tech as a second layer blockchain solution, providing fast and secure trading."
+  address:
+    addressLocality: "Istanbul"
+    addressCountry: "Turkey"
+  foundingDate: "2019"
+  founders: [
+    "Cagatay Aydin",
+    "Yekcan Guler",
+    "Ilhan Cem Duru"
+  ]
+  sameAs: [
+    "https://www.facebook.com/resardis",
+    "https://twitter.com/resardis",
+    "https://www.instagram.com/resardis/",
+    "https://www.linkedin.com/company/resardis"
+  ]

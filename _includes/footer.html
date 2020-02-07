@@ -1,0 +1,115 @@
+<!-- Footer -->
+<footer class="bg-dark text-lightgrey py-3 my-0" id="footer">
+  <div class="container">
+    <div class="row justify-content-around px-2">
+      <div class="col-md-auto contact">
+        {%- if site.data.i18n.contact["en"][0] and site.data.i18n.contact["en"][1] %}
+        <h2>
+          <span class="text-orange">
+            {{- site.data.i18n.contact["en"][0] | strip_html | strip_newlines | xml_escape -}}
+          </span> {{ site.data.i18n.contact["en"][1] | strip_html | strip_newlines | xml_escape -}}
+        </h2>
+        {%- endif %}
+        <div class="contact-email">
+          {%- if site.data.i18n.email["en"] %}
+          <small class="font-italic">
+            {{- site.data.i18n.email["en"] | strip_html | strip_newlines | xml_escape -}}
+          </small>
+          {%- endif %}
+          {%- if site.email %}
+          <p>
+            <small>
+            <a href="{{- 'mailto:' | append: site.email | strip_html | strip_newlines | xml_escape -}}">
+              {{- site.email | strip_html | strip_newlines | xml_escape -}}
+            </a>
+            </small>
+          </p>
+          {%- endif %}
+        </div>
+        <div class="contact-address">
+          {%- if site.data.i18n.address["en"][0] %}
+          <small class="font-italic">
+            {{- site.data.i18n.address["en"][0] | strip_html | strip_newlines | xml_escape -}}
+          </small>
+          {%- endif %}
+          <p>
+            <small>
+            {%- if site.data.i18n.address["en"][1] %}
+            {{- site.data.i18n.address["en"][1] | strip_html | strip_newlines | xml_escape -}}<br/>
+            {%- endif %}
+            {%- if site.data.i18n.address["en"][2] %}
+            {{- site.data.i18n.address["en"][2] | strip_html | strip_newlines | xml_escape -}}<br/>
+            {%- endif %}
+            {%- if site.data.i18n.address["en"][3] %}
+            {{- site.data.i18n.address["en"][3] | strip_html | strip_newlines | xml_escape -}}<br/>
+            {%- endif %}
+            </small>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-auto social-media">
+        <h2>
+          <span class="text-orange">
+            {{- site.data.i18n.follow["en"][0] | strip_html | strip_newlines | xml_escape -}}
+          </span> {{ site.data.i18n.follow["en"][1] | strip_html | strip_newlines | xml_escape -}}
+        </h2>
+        <div>
+          {% if site.data.organization.facebook and site.data.organization.name -%}
+          <a rel="nofollow noreferrer noopener" target="_blank" href="{{- 'https://www.facebook.com/' | append: site.data.organization.facebook | strip_html | strip_newlines | uri_escape -}}" aria-label="{{- site.data.organization.name | strip_html | strip_newlines | xml_escape | append: ' on Facebook' -}}">
+            <i class="fa-facebook-square"></i>
+          </a>
+          {% endif %}
+          {% if site.data.organization.twitter and site.data.organization.name -%}
+          <a rel="nofollow noreferrer noopener" target="_blank" href="{{- 'https://twitter.com/' | append: site.data.organization.twitter | strip_html | strip_newlines | uri_escape -}}" aria-label="{{- site.data.organization.name | strip_html | strip_newlines | xml_escape | append: ' on Twitter' -}}">
+            <i class="fa-twitter-square"></i>
+          </a>
+          {% endif %}
+          {% if site.data.organization.instagram and site.data.organization.name -%}
+          <a rel="nofollow noreferrer noopener" target="_blank" href="{{- 'https://www.instagram.com/' | append: site.data.organization.instagram | append: '/' | strip_html | strip_newlines | uri_escape -}}" aria-label="{{- site.data.organization.name | strip_html | strip_newlines | xml_escape | append: ' on Instagram' -}}">
+            <i class="fa-instagram"></i>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center py-3">
+      <div class="col-lg-auto text-center">
+        <small>
+          {% if site.data.i18n.sitemap["en"] -%}
+          <a href="{{- '/sitemap.xml' | strip_html | strip_newlines | uri_escape | absolute_url -}}">
+            {{- site.data.i18n.sitemap["en"] | strip_html | strip_newlines | xml_escape -}}
+          </a> |
+          {%- endif %}
+          {% if site.data.i18n.copyright["en"] -%}
+          {{- site.data.i18n.copyright["en"] | strip_html | strip_newlines | xml_escape }} &#169; 2019 - 2020
+          {%- endif %}
+          {% if site.data.organization.name and site.url -%}
+          <a href="{{- '/' | strip_html | strip_newlines | uri_escape | absolute_url -}}">
+            {{- site.data.organization.name | strip_html | strip_newlines | xml_escape -}}
+          </a>
+          {%- endif %}
+        </small>
+        <br />
+        <small>
+        {% if site.gnu.shortname and site.gnu.url -%}
+          {{- site.data.i18n.legal["en"][1] | strip_html | strip_newlines | xml_escape -}}&nbsp;
+          <a rel="nofollow noreferrer noopener license" target="_blank" href="{{- site.gnu.url | strip_html | strip_newlines | uri_escape -}}" class="cc-licence">
+            {{- site.gnu.shortname | strip_html | strip_newlines | xml_escape -}}
+          </a>.
+        {%- endif %}
+        </small>
+        <br />
+        <small>
+        {% if site.cc.shortname and site.cc.url -%}
+          {{- site.data.i18n.legal["en"][0] | strip_html | strip_newlines | xml_escape -}}&nbsp;
+          <a rel="nofollow noreferrer noopener license" target="_blank" href="{{- site.cc.url | strip_html | strip_newlines | uri_escape -}}" class="cc-licence">
+            {{- site.cc.shortname | strip_html | strip_newlines | xml_escape -}}
+          </a>&nbsp;
+          {{- site.data.i18n.legal["en"][2] | strip_html | strip_newlines | xml_escape -}}
+        {%- endif %}
+        </small>
+      </div>
+    </div>
+  </div>
+</footer>

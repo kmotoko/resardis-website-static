@@ -1,0 +1,62 @@
+nojs:
+  en: "Please enable the Javascript to properly display the webpage!"
+contact:
+  en: ["Contact", "Us"]
+email:
+  en: "E-mail"
+address:
+  en: ["Address", "Istanbul Technical University", "ARI3 Teknokent, ITU Çekirdek", "34467 Sarıyer, Istanbul/Turkey"]
+follow:
+  en: ["Follow","Us"]
+home:
+  landing:
+    en: ["Decentralized Exchange ", "on", " Side-Chain", "Fast. Private. Secure.", "Explore"]
+  news:
+    en: ["Join the", " Newsletter", "E-mail address", "Submit"]
+  decentralized:
+    title:
+      en: "Decentralized"
+    content:
+      en: >-
+        Just like the cryptocurrencies themselves, Resardis lives on the blockchain. This essentially means that all the trading happens on the blockchain, secured by the state-of-art cryptography and immune to manipulation. Users are the sole owners of their funds, and the exchange does not have any control over the assets. There is nothing stored on the exchange servers, and therefore nothing to steal by the hackers or the exchange admins. You might wonder how we overcome the shortcomings of a decentralized exchange, in that case directly skip over to the side-chain section.
+  private:
+    title:
+      en: "Private"
+    content:
+      en: >-
+        As a decentralized platform, Resardis has a zero-knowledge policy about the customers. Users do not need to sign up with sensitive and personal information. In this context, Resardis is just an intermediary platform which helps traders to find each other and facilitates trading. Just create an address, stay anonymous and start trading. No way to conclude who did what.
+  secure:
+    title:
+      en: "Secure"
+    content:
+      en: >-
+        Users have full control over the funds, meaning they are the only owners of the private keys. Since the keys to crypto wallets are not stored on the exchange servers, even if the exchange gets hacked, there is nothing to steal. Stop trading on centralized exchanges where there is always a possibility of mass cryptocurrency loss.
+  sidechain:
+    title:
+      en: "Side-Chain"
+    content:
+      en: >-
+        Resardis Decentralized Exchange (DEX) is built on top of the side-chain technology. As a second layer solution, side-chain is optimized for scalable decentralized applications, while keeping the base-layer security of the Ethereum blockchain. Unlike the other DEXs, trading is blazing-fast (1 second), the platform can handle super-high trading traffic, the trading orders live on the blockchain for free, and lastly it is possible to trade non-Ethereum and non-ERC20 based crypto-currencies such as TRON, Bitcoin and EOS. No more long trading durations and on-blockchain order fees, all while including cross-blockchain trading.
+sitemap:
+  en: "Site map"
+copyright:
+  en: "Copyright"
+legal:
+  en: [
+  "The content of the website is licensed under",
+  "The code of this software is licensed under",
+  "unless otherwise stated.",
+  "by"
+  ]
+pagenotfound:
+  en: "Page Not Found"
+dateformat:
+  en: "%b %-d, %Y"
+aboutauthor:
+  en: "About the Author"
+pagination:
+  en: ["Prev", "Next"]
+share:
+  en: "Share On"
+noarticle:
+  en: "There are no published article yet."
