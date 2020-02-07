@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="bg-dark text-lightgrey py-3 my-0" id="footer">
+<footer class="bg-dark text-lightgrey pt-3 pb-1 my-0" id="footer">
   <div class="container">
     <div class="row justify-content-around px-2">
       <div class="col-md-auto contact">
@@ -17,7 +17,7 @@
           </small>
           {%- endif %}
           {%- if site.email %}
-          <p>
+          <p class="mb-1">
             <small>
             <a href="{{- 'mailto:' | append: site.email | strip_html | strip_newlines | xml_escape -}}">
               {{- site.email | strip_html | strip_newlines | xml_escape -}}
@@ -32,7 +32,7 @@
             {{- site.data.i18n.address["en"][0] | strip_html | strip_newlines | xml_escape -}}
           </small>
           {%- endif %}
-          <p>
+          <p class="mb-1">
             <small>
             {%- if site.data.i18n.address["en"][1] %}
             {{- site.data.i18n.address["en"][1] | strip_html | strip_newlines | xml_escape -}}<br/>
@@ -73,7 +73,7 @@
       </div>
     </div>
 
-    <div class="row justify-content-center py-3">
+    <div class="row justify-content-center pt-2 pb-1">
       <div class="col-lg-auto text-center">
         <small>
           {% if site.data.i18n.sitemap["en"] -%}
