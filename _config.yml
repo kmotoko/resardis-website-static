@@ -141,6 +141,10 @@ exclude:
   - _images
   - LICENSE.md
   - LICENSE.txt
+  - assets/img/LICENSE.md
+  - assets/img/LICENSE.txt
+  - _posts/LICENSE.md
+  - _posts/LICENSE.txt
   - README.md
   - README.txt
   - package.json
