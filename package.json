@@ -1,8 +1,47 @@
 {
   "name": "resardis-website-static",
-  "version": "0.4.1",
-  "main": "index.js",
+  "version": "2.0.0",
+  "main": "_src/base.js",
   "license": "AGPL-3.0-or-later",
+  "description": "Resardis is a Decentralized Cryptocurrency Exchange (DEX) using the side-chain tech as a second layer blockchain solution, providing fast and secure trading.",
+  "keywords": [
+    "jekyll",
+    "webpack",
+    "Decentralized Cryptocurrency Exchange",
+    "Second Layer Solution, Sidechain", "Side-Chain",
+    "Crypto Trading",
+    "Cryptocurrency Trading",
+    "Ethereum",
+    "Blockchain",
+    "Cryptocurrency",
+    "ERC20",
+    "Bitcoin",
+    "TRON",
+    "EOS"
+  ],
+  "homepage": "https://www.resardis.com/",
+  "author": {
+    "name": "Cagatay Aydin",
+    "email": "cagatay@resardis.com",
+    "url": "https://www.kmotoko.com"
+  },
+  "contributors": [
+    {
+      "name": "Ilhan Cem Duru",
+      "email": "cem@resardis.com"
+    },
+    {
+      "name": "Cagatay Aydin",
+      "email": "cagatay@resardis.com",
+      "url": "https://www.kmotoko.com"
+    }
+  ],
+  "engines": {
+    "node": ">=10.0.0 <11.0.0",
+    "yarn": ">=1.10.0 <2.0.0"
+  },
+  "os": ["darwin", "linux"],
+  "private": true,
   "scripts": {
     "start": "yarn cleanup && yarn build:modernizr:dev && yarn build:webpack:dev && concurrently --kill-others 'yarn start:webpack:dev' 'yarn start:jekyll:dev'",
     "start:webpack:dev": "NODE_ENV=development webpack-dev-server --mode development",
