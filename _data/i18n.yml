@@ -50,6 +50,13 @@ legal:
   ]
 pagenotfound:
   en: "Page Not Found"
+formsuccess:
+  title:
+    en: "Successful"
+  message:
+    en: "Form has been successfully submitted."
+  back:
+    en: "Return to Home"
 dateformat:
   en: "%b %-d, %Y"
 aboutauthor:

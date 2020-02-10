@@ -44,7 +44,7 @@ layout: default-home
                 {{- site.data.i18n.home.news["en"][1] | strip_html | strip_newlines | xml_escape -}}
               </span>
             </p>
-            <form class="px-3" name="newsletter" method="POST" data-netlify-honeypot="pit" data-netlify="true">
+            <form class="px-3" name="newsletter" method="POST" action="{{- '/form-success/' | strip_html | strip_newlines | uri_escape | relative_url -}}" data-netlify-honeypot="pit" data-netlify="true">
               <div class="form-group honeypot">
                 <input name="pit" aria-label="pit" />
               </div>
