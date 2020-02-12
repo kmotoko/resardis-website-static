@@ -59,6 +59,8 @@
     "lint:scss:fix": "yarn stylelint '**/*.scss' --fix",
     "lint:js": "yarn eslint .",
     "lint:js:fix": "yarn eslint --fix .",
+    "lint:all": "yarn lint:css; yarn lint:scss; yarn lint:js",
+    "lint:all:fix": "yarn lint:css:fix; yarn lint:scss:fix; yarn lint:js:fix",
     "cleanup": "rm -rvf ./build/ ./_site/ ./assets/"
   },
   "devDependencies": {
