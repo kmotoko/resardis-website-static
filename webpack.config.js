@@ -141,7 +141,10 @@ module.exports = {
                 parallel: true,
                 // Disable file caching
                 cache: false,
-                // sourceMap: false, // Must be set to true if using source-maps in production
+                // This option extracts comments that has
+                // license, preserve, or cc tags into a separate file
+                // see the docs for details
+                extractComments: false,
             }),
             new OptimizeCSSAssetsPlugin({}),
         ],
@@ -155,11 +158,14 @@ module.exports = {
         contentBase: [
             path.resolve(__dirname, '_site/'),
         ],
+        watchContentBase: true,
         hot: false,
+        liveReload: true, // hot must be disabled, watchContentBase must be enabled
         writeToDisk: true,
         watchOptions: {
             aggregateTimeout: 1000,
             poll: true,
+            ignored: ['.git/**', '.jekyll-cache/**', 'node_modules/**'],
         },
     },
 };
