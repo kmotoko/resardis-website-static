@@ -47,16 +47,14 @@
   ],
   "private": true,
   "scripts": {
-    "start": "yarn cleanup && yarn build:modernizr:dev && yarn build:webpack:dev && concurrently --kill-others 'yarn start:webpack:dev' 'yarn start:jekyll:dev'",
+    "start": "yarn cleanup && yarn build:webpack:dev && concurrently --kill-others 'yarn start:webpack:dev' 'yarn start:jekyll:dev'",
     "start:webpack:dev": "NODE_ENV=development webpack-dev-server --mode development",
     "start:jekyll:dev": "JEKYLL_ENV=development bundle exec jekyll serve --trace",
-    "build": "yarn cleanup && yarn build:modernizr && yarn build:webpack && yarn build:jekyll",
+    "build": "yarn cleanup && yarn build:webpack && yarn build:jekyll",
     "build:webpack": "NODE_ENV=production yarn webpack --mode production",
     "build:webpack:dev": "NODE_ENV=development yarn webpack --mode development",
-    "build:modernizr": "NODE_ENV=production yarn modernizr -c modernizr-config.json -d _src/js/modernizr.js",
-    "build:modernizr:dev": "NODE_ENV=development yarn modernizr -c modernizr-config.json -d _src/js/modernizr.js",
     "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter --trace",
-    "test": "yarn cleanup && yarn build:modernizr && yarn build:webpack && JEKYLL_ENV=production bundle exec rake test",
+    "test": "yarn cleanup && yarn build:webpack && JEKYLL_ENV=production bundle exec rake test",
     "lint:css": "yarn stylelint '**/*.css'",
     "lint:css:fix": "yarn stylelint '**/*.css' --fix",
     "lint:scss": "yarn stylelint '**/*.scss'",
@@ -103,7 +101,6 @@
     "bootstrap": "^4.3.1",
     "bootstrap.native": "^2.0.27",
     "core-js": "3",
-    "lazysizes": "^5.1.2",
-    "modernizr": "^3.8.0"
+    "lazysizes": "^5.1.2"
   }
 }

@@ -161,7 +161,6 @@ exclude:
   - yarn.lock
   - postcss.config.js
   - babel.config.js
-  - modernizr-config.json
   - .browserslistrc
   - .eslintrc.json
   - .stylelintignore

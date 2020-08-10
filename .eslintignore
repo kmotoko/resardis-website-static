@@ -5,7 +5,6 @@ build/
 *.min.js
 g-analytics.js
 google-analytics.js
-modernizr.js
 
 # Jekyll
 _site/
