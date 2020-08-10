@@ -258,7 +258,7 @@ code.highlighter-rouge {
     // Added for jekyll-scholar
     .bibliography {
       list-style-type: none;
-      text-align: left;
+      text-align: left !important;
       font-size: 0.875em;
 
       span {
