@@ -249,7 +249,8 @@ code.highlighter-rouge {
       text-align: left;
     }
 
-    p, ul {
+    p,
+    ul {
       text-align: justify;
       hyphens: auto;
     }
@@ -259,6 +260,7 @@ code.highlighter-rouge {
       list-style-type: none;
       text-align: left;
       font-size: 0.875em;
+
       span {
         overflow-wrap: break-word;
         word-wrap: break-word;
