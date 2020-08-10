@@ -18,7 +18,7 @@ The following is the step-by-step walk-through of the build process:
 ### Dependencies & Dev Environment
 + Make sure you have `node.js` installed. See [node.js snap](https://snapcraft.io/node) for Linux installation, or check out the official page for other installation methods.
 
-+ `Yarn` is being used as the package manager for `Nnde.js` modules. Install dependencies with `yarn`:
++ `Yarn` is being used as the package manager for `Node.js` modules. Install dependencies with `yarn`:
 ```shell
 cd <projectDir>
 yarn install
@@ -46,6 +46,14 @@ Generated html is validated and checked for broken links, non-https links, prese
 cd <projectDir>
 yarn test
 ```
+
+### TODO
++ Add separate pages for authors, in detail. This also concers updated structured data for authors.
++ Add collections and series to the Articles section.
++ Add Backers & Sponsors to the homepage.
++ Add a rough roadmap to the homepage.
++ Add (maybe) team members to the homepage.
++ Fix: Google takes the wrong organization logo, despite the structered data. It seems that it takes the logo in navbar.
 
 ## License
 The software code and the content are licensed separately, see below for the details.
