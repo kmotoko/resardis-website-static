@@ -215,6 +215,14 @@ code.highlighter-rouge {
     font-weight: bold;
   }
 
+  .post-container {
+    @media only all and (min-width: map-get($grid-breakpoints, lg)) {
+      max-width: map-get($container-max-widths, xl) - 190px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
   .post-header {
     .post-image-wrapper {
       // fix extra text nodes
@@ -241,9 +249,20 @@ code.highlighter-rouge {
       text-align: left;
     }
 
-    p {
+    p, ul {
       text-align: justify;
       hyphens: auto;
+    }
+
+    // Added for jekyll-scholar
+    .bibliography {
+      list-style-type: none;
+      text-align: left;
+      font-size: 0.875em;
+      span {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+      }
     }
   }
 
@@ -292,45 +311,45 @@ code.highlighter-rouge {
   .calltoaction-social {
     font-size: $social-media-icon-size;
 
-    .calltoaction-facebook {
-      color: $facebook-blue;
-    }
+    // .calltoaction-facebook {
+    //   color: $facebook-blue;
+    // }
 
-    .calltoaction-facebook:hover {
-      color: darken($facebook-blue, $social-media-icon-hover);
-    }
+    // .calltoaction-facebook:hover {
+    //   color: darken($facebook-blue, $social-media-icon-hover);
+    // }
 
-    .calltoaction-twitter {
-      color: $twitter-blue;
-    }
+    // .calltoaction-twitter {
+    //   color: $twitter-blue;
+    // }
 
-    .calltoaction-twitter:hover {
-      color: darken($twitter-blue, $social-media-icon-hover);
-    }
+    // .calltoaction-twitter:hover {
+    //   color: darken($twitter-blue, $social-media-icon-hover);
+    // }
 
-    .calltoaction-reddit {
-      color: $reddit-red;
-    }
+    // .calltoaction-reddit {
+    //   color: $reddit-red;
+    // }
 
-    .calltoaction-reddit:hover {
-      color: darken($reddit-red, $social-media-icon-hover);
-    }
+    // .calltoaction-reddit:hover {
+    //   color: darken($reddit-red, $social-media-icon-hover);
+    // }
 
-    .calltoaction-linkedin {
-      color: $linkedin-blue;
-    }
+    // .calltoaction-linkedin {
+    //   color: $linkedin-blue;
+    // }
 
-    .calltoaction-linkedin:hover {
-      color: darken($linkedin-blue, $social-media-icon-hover);
-    }
+    // .calltoaction-linkedin:hover {
+    //   color: darken($linkedin-blue, $social-media-icon-hover);
+    // }
 
-    .calltoaction-telegram {
-      color: $telegram-blue;
-    }
+    // .calltoaction-telegram {
+    //   color: $telegram-blue;
+    // }
 
-    .calltoaction-telegram:hover {
-      color: darken($telegram-blue, $social-media-icon-hover);
-    }
+    // .calltoaction-telegram:hover {
+    //   color: darken($telegram-blue, $social-media-icon-hover);
+    // }
   }
 }
 
