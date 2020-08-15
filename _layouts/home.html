@@ -2,7 +2,7 @@
 layout: default-home
 ---
 
-<main aria-label="Main Content">
+<main aria-label="Main Content" class="home">
   {% if site.thumbnail.home -%}
   {%- assign thumb_home = site.thumbnail.home | strip_html | strip_newlines | uri_escape -%}
   {%- endif -%}
@@ -187,4 +187,239 @@ layout: default-home
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="backers py-5 my-0" id="backers">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-auto">
+            <h2 class="display-3 pb-2">
+              {{- site.data.i18n.home.backers["en"] | strip_html | strip_newlines | xml_escape -}}
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-around text-center">
+          <div class="col-md-6 py-3">
+            {% if site.thumbnail.base and thumb_home -%}
+            {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+            <a rel="nofollow noreferrer noopener" target="_blank" href="{{- site.data.i18n.home.backers-links['en'][0] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.backers-names['en'][0] | strip_html | strip_newlines | xml_escape -}}">
+
+            ​<picture>
+              <!-- Aspect ratio for base64 = 1:1 -->
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'efse-european-fund-for-southeast-europe-logo' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'efse-european-fund-for-southeast-europe-logo' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
+              <img data-src="{{- thumb_base | append: thumb_home | append: 'efse-european-fund-for-southeast-europe-logo' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload" alt="{{- site.data.i18n.home.backers-names['en'][0] | strip_html | strip_newlines | xml_escape | append: 'Logo' -}}">
+            </picture>
+
+            </a>
+            {%- endif %}
+          </div>
+          <div class="col-md-6 py-3">
+            {% if site.thumbnail.base and thumb_home -%}
+            {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+            <a rel="nofollow noreferrer noopener" target="_blank" href="{{- site.data.i18n.home.backers-links['en'][1] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.backers-names['en'][1] | strip_html | strip_newlines | xml_escape -}}">
+              ​
+            <picture>
+              <!-- Aspect ratio for base64 = 1:1 -->
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'turk-telekom-pilot-logo' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'turk-telekom-pilot-logo' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
+              <img data-src="{{- thumb_base | append: thumb_home | append: 'turk-telekom-pilot-logo' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload" alt="{{- site.data.i18n.home.backers-names['en'][1] | strip_html | strip_newlines | xml_escape | append: 'Logo' -}}">
+            </picture>
+            {%- endif %}
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-around text-center">
+          <div class="col-md-6 py-3">
+            {% if site.thumbnail.base and thumb_home -%}
+            {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+            <a rel="nofollow noreferrer noopener" target="_blank" href="{{- site.data.i18n.home.backers-links['en'][2] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.backers-names['en'][2] | strip_html | strip_newlines | xml_escape -}}">
+              ​
+            <picture>
+              <!-- Aspect ratio for base64 = 1:1 -->
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'itu-ari-logo' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'itu-ari-logo' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
+              <img data-src="{{- thumb_base | append: thumb_home | append: 'itu-ari-logo' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload" alt="{{- site.data.i18n.home.backers-names['en'][2] | strip_html | strip_newlines | xml_escape | append: 'Logo' -}}">
+            </picture>
+            {%- endif %}
+            </a>
+          </div>
+          <div class="col-md-6 py-3">
+            {% if site.thumbnail.base and thumb_home -%}
+            {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+            <a rel="nofollow noreferrer noopener" target="_blank" href="{{- site.data.i18n.home.backers-links['en'][3] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.backers-names['en'][3] | strip_html | strip_newlines | xml_escape -}}">
+              ​
+            <picture>
+              <!-- Aspect ratio for base64 = 1:1 -->
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'itu-cekirdek-logo' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'itu-cekirdek-logo' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
+              <img data-src="{{- thumb_base | append: thumb_home | append: 'itu-cekirdek-logo' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload" alt="{{- site.data.i18n.home.backers-names['en'][3] | strip_html | strip_newlines | xml_escape | append: 'Logo' -}}">
+            </picture>
+            {%- endif %}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="team py-5 my-0 text-lightgrey" id="team">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-auto">
+            <h2 class="display-3 pb-2">
+              {{- site.data.i18n.home.team["en"] | strip_html | strip_newlines | xml_escape -}}
+            </h2>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4">
+            {% if site.thumbnail.base and thumb_home -%}
+            {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+            ​<picture>
+              <!-- Aspect ratio for base64 = 1:1 -->
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'yekcan-guler' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'yekcan-guler' | append: '.jpg' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/jpeg">
+              <img data-src="{{- thumb_base | append: thumb_home | append: 'yekcan-guler' | append: '.jpg' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload team-picture py-3" alt="{{- site.data.i18n.home.team-names['en'][0] | strip_html | strip_newlines | xml_escape -}}">
+            </picture>
+            {%- endif %}
+            <h3 class="text-orange mb-1">{{- site.data.i18n.home.team-names["en"][0] | strip_html | strip_newlines | xml_escape -}}</h3>
+            <p>
+              <span class="font-italic">{{- site.data.i18n.home.team-roles["en"][0] | strip_html | strip_newlines | xml_escape -}}</span>
+              <br/>
+              <a rel="nofollow noreferrer noopener" class="team-linkedin px-1" target="_blank" href="{{- site.data.i18n.home.team-linkedins['en'][0] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.team-names['en'][0] | strip_html | strip_newlines | xml_escape | append: ' LinkedIn' -}}">
+                <i class="fa-linkedin"></i>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            {% if site.thumbnail.base and thumb_home -%}
+            {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+            ​<picture>
+              <!-- Aspect ratio for base64 = 1:1 -->
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'cagatay-aydin' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'cagatay-aydin' | append: '.jpg' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/jpeg">
+              <img data-src="{{- thumb_base | append: thumb_home | append: 'cagatay-aydin' | append: '.jpg' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload team-picture py-3" alt="{{- site.data.i18n.home.team-names['en'][1] | strip_html | strip_newlines | xml_escape -}}">
+            </picture>
+            {%- endif %}
+            <h3 class="text-orange mb-1">{{- site.data.i18n.home.team-names["en"][1] | strip_html | strip_newlines | xml_escape -}}</h3>
+            <p>
+              <span class="font-italic">{{- site.data.i18n.home.team-roles["en"][1] | strip_html | strip_newlines | xml_escape -}}</span>
+              <br/>
+              <a rel="nofollow noreferrer noopener" class="team-linkedin px-1" target="_blank" href="{{- site.data.i18n.home.team-linkedins['en'][1] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.team-names['en'][1] | strip_html | strip_newlines | xml_escape | append: ' LinkedIn' -}}">
+                <i class="fa-linkedin"></i>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            {% if site.thumbnail.base and thumb_home -%}
+            {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
+            ​<picture>
+              <!-- Aspect ratio for base64 = 1:1 -->
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'ilhan-cem-duru' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'ilhan-cem-duru' | append: '.jpg' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/jpeg">
+              <img data-src="{{- thumb_base | append: thumb_home | append: 'ilhan-cem-duru' | append: '.jpg' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload team-picture py-3" alt="{{- site.data.i18n.home.team-names['en'][2] | strip_html | strip_newlines | xml_escape -}}">
+            </picture>
+            {%- endif %}
+            <h3 class="text-orange mb-1">{{- site.data.i18n.home.team-names["en"][2] | strip_html | strip_newlines | xml_escape -}}</h3>
+            <p>
+              <span class="font-italic">{{- site.data.i18n.home.team-roles["en"][2] | strip_html | strip_newlines | xml_escape -}}</span>
+              <br/>
+              <a rel="nofollow noreferrer noopener" class="team-linkedin px-1" target="_blank" href="{{- site.data.i18n.home.team-linkedins['en'][2] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.team-names['en'][2] | strip_html | strip_newlines | xml_escape | append: ' LinkedIn' -}}">
+                <i class="fa-linkedin"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="roadmap py-5 my-0" id="roadmap">
+      <div class="container">
+        <h2 class="display-3 text-center pb-3">{{- site.data.i18n.home.roadmap-title["en"] | strip_html | strip_newlines | xml_escape -}}</h2>
+        <!--first section-->
+        <div class="row align-items-center timeline-item">
+          <div class="col-2 text-center bottom">
+            <div class="circle">1</div>
+          </div>
+          <div class="col-6">
+            <h3>{{- site.data.i18n.home.roadmap-item-names["en"][0] | strip_html | strip_newlines | xml_escape -}}</h3>
+            <p class="font-italic">{{- site.data.i18n.home.roadmap-item-descriptions["en"][0] | strip_html | strip_newlines | xml_escape -}}</p>
+          </div>
+        </div>
+        <!--path between 1-2-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner top-right"></div>
+          </div>
+          <div class="col-8">
+            <hr/>
+          </div>
+          <div class="col-2">
+            <div class="corner left-bottom"></div>
+          </div>
+        </div>
+        <!--second section-->
+        <div class="row align-items-center justify-content-end timeline-item">
+          <div class="col-6 text-right">
+            <h3>{{- site.data.i18n.home.roadmap-item-names["en"][1] | strip_html | strip_newlines | xml_escape -}}</h3>
+            <p class="font-italic">{{- site.data.i18n.home.roadmap-item-descriptions["en"][1] | strip_html | strip_newlines | xml_escape -}}</p>
+          </div>
+          <div class="col-2 text-center full">
+            <div class="circle">2</div>
+          </div>
+        </div>
+        <!--path between 2-3-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner right-bottom"></div>
+          </div>
+          <div class="col-8">
+            <hr/>
+          </div>
+          <div class="col-2">
+            <div class="corner top-left"></div>
+          </div>
+        </div>
+        <!--third section-->
+        <div class="row align-items-center timeline-item">
+          <div class="col-2 text-center full-left-hand">
+            <div class="circle">3</div>
+          </div>
+          <div class="col-6">
+            <h3>{{- site.data.i18n.home.roadmap-item-names["en"][2] | strip_html | strip_newlines | xml_escape -}}</h3>
+            <p class="font-italic">{{- site.data.i18n.home.roadmap-item-descriptions["en"][2] | strip_html | strip_newlines | xml_escape -}}</p>
+          </div>
+        </div>
+        <!--path between 3-4-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner top-right"></div>
+          </div>
+          <div class="col-8">
+            <hr/>
+          </div>
+          <div class="col-2">
+            <div class="corner left-bottom"></div>
+          </div>
+        </div>
+        <!--fourth section-->
+        <div class="row align-items-center justify-content-end timeline-item">
+          <div class="col-6 text-right">
+            <h3>{{- site.data.i18n.home.roadmap-item-names["en"][3] | strip_html | strip_newlines | xml_escape -}}</h3>
+            <p class="font-italic">{{- site.data.i18n.home.roadmap-item-descriptions["en"][3] | strip_html | strip_newlines | xml_escape -}}</p>
+          </div>
+          <div class="col-2 text-center top-right-hand">
+            <div class="circle">4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>

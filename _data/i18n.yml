@@ -37,6 +37,31 @@ home:
     content:
       en: >-
         Resardis Decentralized Exchange (DEX) is built on top of the side-chain technology. As a second layer solution, side-chain is optimized for scalable decentralized applications, while keeping the base-layer security of the Ethereum blockchain. Unlike the other DEXs, trading is blazing-fast (1 second), the platform can handle super-high trading traffic, the trading orders live on the blockchain for free, and lastly it is possible to trade non-Ethereum and non-ERC20 based crypto-currencies such as TRON, Bitcoin and EOS. No more long trading durations and on-blockchain order fees, all while including cross-blockchain trading.
+  backers:
+    en: "Backers & Sponsors"
+  backers-names:
+    en: ["European Fund for Southeast Europe (EFSE)", "Türk Telekom Pilot", "İTÜ Arı Teknokent", "İTÜ Çekirdek"]
+  backers-links:
+    en: ["https://www.efse.lu", "https://www.turktelekompilot.com.tr", "https://itumagnet.com", "https://itucekirdek.com"]
+  team:
+    en: "Founding Fathers"
+  team-linkedins:
+    en: ["https://www.linkedin.com/in/yekcanguler/", "https://www.linkedin.com/in/aydin-cagatay/", "https://www.linkedin.com/in/cem-duru/"]
+  team-names:
+    en: ["Yekcan Guler", "Cagatay Aydin", "Cem Duru"]
+  team-roles:
+    en: ["Marketing & PR", "Software Developer", "Software Developer"]
+  roadmap-title:
+    en: "Roadmap"
+  roadmap-item-names:
+    en: ["Resardis DEX Beta", "Resardis DEX Production Release", "Resardis DAO", "New Order Types"]
+  roadmap-item-descriptions:
+    en: [
+      "Initial release of Resardis DEX will be published on Matic Network Testnet.",
+      "After a testing, bug-fixing, and security auditing phase, Resardis DEX will be live on Matic Main Network.",
+      "Resardis will become a Decentralized Autonomous Organization (DAO), based on the Aragon Project.",
+      "Resardis DEX will implement additional order types, other than the simple market and limit orders."
+    ]
 sitemap:
   en: "Site map"
 copyright:
