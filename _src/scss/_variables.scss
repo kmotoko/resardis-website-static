@@ -1,5 +1,6 @@
 // CUSTOM VARIABLES - NOT IN BOOTSTRAP
 $body-bg-grey: #f7f7f7;
+$gray-950: #101010;
 
 $link-transition-duration: 0.3s;
 $link-timing-function: ease-in;
@@ -93,7 +94,7 @@ $info: $cyan;
 $warning: $yellow;
 $danger: $red;
 $light: $gray-100;
-$dark: $black;
+$dark: $gray-950;
 
 $theme-colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default
