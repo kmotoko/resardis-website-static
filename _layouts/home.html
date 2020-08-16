@@ -199,7 +199,7 @@ layout: default-home
           </div>
         </div>
         <div class="row justify-content-around text-center">
-          <div class="col-md-6 py-3">
+          <div class="col-md-auto py-3 px-2">
             {% if site.thumbnail.base and thumb_home -%}
             {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
             <a rel="nofollow noreferrer noopener" target="_blank" href="{{- site.data.i18n.home.backers-links['en'][0] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.backers-names['en'][0] | strip_html | strip_newlines | xml_escape -}}">
@@ -214,36 +214,37 @@ layout: default-home
             </a>
             {%- endif %}
           </div>
-          <div class="col-md-6 py-3">
+          <div class="col-md-auto py-3 px-2">
             {% if site.thumbnail.base and thumb_home -%}
             {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
             <a rel="nofollow noreferrer noopener" target="_blank" href="{{- site.data.i18n.home.backers-links['en'][1] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.backers-names['en'][1] | strip_html | strip_newlines | xml_escape -}}">
               ​
             <picture>
               <!-- Aspect ratio for base64 = 1:1 -->
-              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'turk-telekom-pilot-logo' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
-              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'turk-telekom-pilot-logo' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
-              <img data-src="{{- thumb_base | append: thumb_home | append: 'turk-telekom-pilot-logo' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload" alt="{{- site.data.i18n.home.backers-names['en'][1] | strip_html | strip_newlines | xml_escape | append: 'Logo' -}}">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'turk-telekom-pilot-logo-v2' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'turk-telekom-pilot-logo-v2' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
+              <img data-src="{{- thumb_base | append: thumb_home | append: 'turk-telekom-pilot-logo-v2' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload" alt="{{- site.data.i18n.home.backers-names['en'][1] | strip_html | strip_newlines | xml_escape | append: 'Logo' -}}">
             </picture>
             {%- endif %}
             </a>
           </div>
-        </div>
-        <div class="row justify-content-around text-center">
-          <div class="col-md-auto py-3">
+          <div class="col-md-auto py-3 px-2">
             {% if site.thumbnail.base and thumb_home -%}
             {% assign thumb_base = site.thumbnail.base | strip_html | strip_newlines | uri_escape -%}
             <a rel="nofollow noreferrer noopener" target="_blank" href="{{- site.data.i18n.home.backers-links['en'][3] | strip_html | strip_newlines | uri_escape -}}" title="{{- site.data.i18n.home.backers-names['en'][3] | strip_html | strip_newlines | xml_escape -}}">
               ​
             <picture>
               <!-- Aspect ratio for base64 = 1:1 -->
-              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'itu-cekirdek-logo' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
-              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'itu-cekirdek-logo' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
-              <img data-src="{{- thumb_base | append: thumb_home | append: 'itu-cekirdek-logo' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload" alt="{{- site.data.i18n.home.backers-names['en'][3] | strip_html | strip_newlines | xml_escape | append: 'Logo' -}}">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'itu-cekirdek-logo-v2' | append: '.webp' | relative_url -}}" srcset="data:image/webp;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSAQAAAABiIgIVlA4IBoAAAAwAQCdASoQABAAAMASJaQAA3AA/v7uqgAAAA==" type="image/webp">
+              <source data-srcset="{{- thumb_base | append: thumb_home | append: 'itu-cekirdek-logo-v2' | append: '.png' | relative_url -}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" type="image/png">
+              <img data-src="{{- thumb_base | append: thumb_home | append: 'itu-cekirdek-logo-v2' | append: '.png' | relative_url -}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAC0lEQVQI12NggAEAAAoAAef42voAAAAASUVORK5CYII=" class="lazyload" alt="{{- site.data.i18n.home.backers-names['en'][3] | strip_html | strip_newlines | xml_escape | append: 'Logo' -}}">
             </picture>
             {%- endif %}
             </a>
           </div>
+        </div>
+        <div class="row justify-content-around text-center">
+
         </div>
       </div>
     </div>
