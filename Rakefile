@@ -18,7 +18,7 @@ task :test do
             "#"  # ignore dropdown hrefs
         ],
          # 999=Request Denied Error, might happen if the server thinks you are a bot
-        :http_status_ignore => [999],
+        :http_status_ignore => [0, 999],
         :validation => {
             :report_missing_doctype => true,
             :report_script_embeds => true,
