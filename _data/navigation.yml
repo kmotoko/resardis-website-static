@@ -41,6 +41,18 @@
   link:
     en: "/articles/"
   invisible: false
+- id: "privacypolicy"
+  name:
+    en: "Privacy Policy"
+  link:
+    en: "/privacy-policy/"
+  invisible: false
+- id: "termsofservice"
+  name:
+    en: "Terms of Service"
+  link:
+    en: "/terms-of-service/"
+  invisible: false
 - id: "contact"
   name:
     en: "Contact"

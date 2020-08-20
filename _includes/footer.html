@@ -32,7 +32,7 @@
             {{- site.data.i18n.address["en"][0] | strip_html | strip_newlines | xml_escape -}}
           </small>
           {%- endif %}
-          <p class="mb-1">
+          <p class="mb-4">
             <small>
             {%- if site.data.i18n.address["en"][1] %}
             {{- site.data.i18n.address["en"][1] | strip_html | strip_newlines | xml_escape -}}<br/>
@@ -46,6 +46,28 @@
             </small>
           </p>
         </div>
+      </div>
+      <div class="col-md-auto legal">
+        {%- if site.data.i18n.gdpr["en"] %}
+        <h2>
+            {{- site.data.i18n.gdpr["en"] | strip_html | strip_newlines | xml_escape -}}
+        </h2>
+        {%- endif %}
+        <ul class="pl-0 mb-4">
+          {%- for my_page in site.data.navigation -%}
+          {%- unless my_page.invisible -%}
+          {% if my_page.link['en'] and my_page.name["en"] -%}
+          {% if my_page.id == "privacypolicy" or my_page.id == "termsofservice" -%}
+          <li>
+            <a href="{{- my_page.link['en'] | strip_html | strip_newlines | uri_escape -}}">
+              {{- my_page.name["en"] | strip_html | strip_newlines | xml_escape -}}
+            </a>
+          </li>
+          {%- endif %}
+          {%- endif %}
+          {%- endunless -%}
+          {%- endfor -%}
+        </ul>
       </div>
       <div class="col-md-auto social-media">
         <h2>

@@ -96,6 +96,41 @@ code.highlighter-rouge {
   padding-right: map-get($spacers, 1);
 }
 
+// Policy
+.policy {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: left;
+  }
+
+  p,
+  ul {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+
+// FOOTER
+
+footer {
+  flex-shrink: 0;
+  line-height: $alt-line-height;
+
+  .social-media {
+    font-size: $social-media-icon-size;
+  }
+
+  .legal {
+    ul {
+      list-style-type: none;
+    }
+  }
+}
+
 // ARCHIVE-POSTLIST
 
 .archive {
@@ -553,17 +588,6 @@ code.highlighter-rouge {
     .dropdown-item:hover {
       background-color: $gray-400;
     }
-  }
-}
-
-// FOOTER
-
-footer {
-  flex-shrink: 0;
-  line-height: $alt-line-height;
-
-  .social-media {
-    font-size: $social-media-icon-size;
   }
 }
 
