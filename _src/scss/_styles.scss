@@ -35,6 +35,12 @@ a {
   color: $orange;
 }
 
+.btn-outline-dark:hover {
+  color: $orange;
+  background-color: $dark;
+  border-color: $dark;
+}
+
 .text-justify {
   hyphens: auto;
 
@@ -94,6 +100,25 @@ code.highlighter-rouge {
   padding-bottom: map-get($spacers, 1) / 2;
   padding-left: map-get($spacers, 1);
   padding-right: map-get($spacers, 1);
+}
+
+// Cookie-notice
+.cookie-notice {
+  font-size: $font-size-sm * 0.95;
+  color: $gray-700;
+  text-align: justify;
+  hyphens: auto;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba($orange, 0.95);
+  z-index: 200;
+  width: 100vw;
+  display: none;
+
+  a,
+  span {
+    display: inline-block;
+  }
 }
 
 // Policy

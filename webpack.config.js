@@ -78,11 +78,6 @@ module.exports = {
                 to: path.resolve(__dirname, 'assets', 'favicons'),
                 toType: 'dir',
             },
-            {
-                from: path.resolve(__dirname, '_src', 'js', 'g-analytics.js'),
-                to: path.resolve(__dirname, 'assets'),
-                toType: 'dir',
-            },
         ]),
         new HtmlWebpackPlugin(
             {

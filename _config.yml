@@ -63,11 +63,6 @@ webmaster:
   yandex: "9aa091afd0106bd7"
   bing: "74773E5B232A2EC1623B89F30BC61EC4"
 
-analytics:
-  google:
-    name: "g-analytics.js"
-    dir: "/assets/"
-
 # LICENSE INFO
 # Content Licensing: Use Creative Commons
 cc:
@@ -165,6 +160,7 @@ exclude:
   - .eslintrc.json
   - .stylelintignore
   - .stylelintrc.json
+  - _dev-certificates
 
 include:
   - _redirects

@@ -75,6 +75,8 @@ legal:
   ]
 gdpr:
   en: "Legal"
+cookie-consent:
+  en: ["We use cookies and tracking technologies as part of our service. By continuing, you consent to the policies, our use of cookies and tracking tech.", "Approve", "Learn more"]
 pagenotfound:
   en: "Page Not Found"
 formsuccess:
