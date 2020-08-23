@@ -58,7 +58,7 @@
           {%- unless my_page.invisible -%}
           {% if my_page.link['en'] and my_page.name["en"] -%}
           {% if my_page.id == "privacypolicy" or my_page.id == "termsofservice" -%}
-          <li>
+          <li class="mb-2">
             <a href="{{- my_page.link['en'] | strip_html | strip_newlines | uri_escape -}}">
               {{- my_page.name["en"] | strip_html | strip_newlines | xml_escape -}}
             </a>
