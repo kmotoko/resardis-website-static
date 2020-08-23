@@ -7,14 +7,14 @@
         </span>
       </div>
       <div class="col-auto">
-        <a id="cookie-notice-accept" class="btn btn-sm btn-outline-dark rounded-sm m-2">
+        <a id="cookie-notice-accept" class="btn btn-sm btn-outline-dark rounded-sm m-2" aria-label="{{- site.data.i18n.cookie-consent['en'][1] | strip_html | strip_newlines | xml_escape -}}" title="{{- site.data.i18n.cookie-consent['en'][1] | strip_html | strip_newlines | xml_escape -}}">
           {{- site.data.i18n.cookie-consent["en"][1] | strip_html | strip_newlines | xml_escape -}}
         </a>
         {%- for my_page in site.data.navigation -%}
         {%- unless my_page.invisible -%}
         {% if my_page.id == "privacypolicy" and my_page.link['en'] and my_page.name["en"] -%}
-        <a href="{{- my_page.link['en'] | strip_html | strip_newlines | uri_escape | relative_url -}}" class="btn btn-sm btn-outline-dark rounded-sm m-2">
-          {{- site.data.i18n.cookie-consent["en"][2] | strip_html | strip_newlines | xml_escape -}}
+        <a href="{{- my_page.link['en'] | strip_html | strip_newlines | uri_escape | relative_url -}}" class="btn btn-sm btn-outline-dark rounded-sm m-2" aria-label="{{- my_page.name['en'] | strip_html | strip_newlines | xml_escape -}}" title="{{- my_page.name['en'] | strip_html | strip_newlines | xml_escape -}}">
+          {{- my_page.name["en"] | strip_html | strip_newlines | xml_escape -}}
         </a>
         {%- endif %}
         {%- endunless -%}
