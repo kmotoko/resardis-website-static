@@ -46,7 +46,7 @@ function setAnalytics () {
             'UA-134849487-1',
             'auto',
             {
-                "siteSpeedSampleRate": 20,
+                "siteSpeedSampleRate": 100,
                 "sampleRate": 100,
                 "cookieExpires": 31104000,
                 "cookieFlags": "Secure",
