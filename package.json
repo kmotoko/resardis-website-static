@@ -48,8 +48,8 @@
   "private": true,
   "scripts": {
     "start": "yarn cleanup && yarn build:webpack:dev && concurrently --kill-others 'yarn start:webpack:dev' 'yarn start:jekyll:dev'",
-    "start:webpack:dev": "NODE_ENV=development webpack-dev-server --mode development",
-    "start:jekyll:dev": "JEKYLL_ENV=development bundle exec jekyll serve --trace",
+    "start:webpack:dev": "NODE_ENV=development webpack-dev-server --https --mode development",
+    "start:jekyll:dev": "JEKYLL_ENV=development bundle exec jekyll serve --trace --ssl-cert ./_dev-certificates/localhost.crt --ssl-key ./_dev-certificates/localhost.key",
     "build": "yarn cleanup && yarn build:webpack && yarn build:jekyll",
     "build:webpack": "NODE_ENV=production yarn webpack --mode production",
     "build:webpack:dev": "NODE_ENV=development yarn webpack --mode development",
