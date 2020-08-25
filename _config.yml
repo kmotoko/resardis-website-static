@@ -23,7 +23,7 @@ email: "hello@resardis.com"
 # IMPORTANT: Do not use quotes for the value after ">-"
 # Yml parser includes user-entered quotes when ">-" used
 description: >- # ignore newlines until the next key
-  Resardis is a Decentralized Cryptocurrency Exchange (DEX) using the side-chain tech
+  Resardis is a Decentralized Cryptocurrency Exchange (DEX) using the side chain tech
   as a second layer blockchain solution, providing fast and secure trading.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.resardis.com" # the base hostname & protocol for your site, e.g. http://example.com

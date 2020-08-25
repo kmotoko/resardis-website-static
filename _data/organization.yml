@@ -6,7 +6,7 @@ stdata:
   alternateName: "Resardis Decentralized Cryptocurrency Exchange"
   url: "https://www.resardis.com/"
   logo: "https://www.resardis.com/assets/img/logo/resardis-logo-notext.png"
-  description: "Resardis is a Decentralized Cryptocurrency Exchange (DEX) using the side-chain tech as a second layer blockchain solution, providing fast and secure trading."
+  description: "Resardis is a Decentralized Cryptocurrency Exchange (DEX) using the side chain tech as a second layer blockchain solution, providing fast and secure trading."
   address:
     addressLocality: "Istanbul"
     addressCountry: "Turkey"
