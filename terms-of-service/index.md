@@ -2,6 +2,8 @@
 # Global vars
 layout: policy
 title: "Terms of Service"
+date: 2020-08-20 14:00:00 +0300
+last_modified_at: 2020-08-20 14:00:00 +0300
 # Theme specific vars
 summary: "Terms of Service of Resardis"
 # Thumbnail is only used for opengraph and twitter in the about page

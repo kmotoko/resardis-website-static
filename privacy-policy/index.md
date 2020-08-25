@@ -2,6 +2,8 @@
 # Global vars
 layout: policy
 title: "Privacy policy"
+date: 2020-08-20 14:00:00 +0300
+last_modified_at: 2020-08-20 14:00:00 +0300
 # Theme specific vars
 summary: "Privacy Policy of Resardis"
 # Thumbnail is only used for opengraph and twitter in the about page
