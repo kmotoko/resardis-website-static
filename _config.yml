@@ -48,7 +48,8 @@ thumbnail:
   extra_wide_ext: "_2x1"
   home: "home/"
   header_logo:
-    name: "resardis-logo-header"
+    name: "resardis-logo-header-v2"
+    text: "RESARDIS"
     dir: "logo/"
   publisher_logo:
     name: "resardis-publisher"

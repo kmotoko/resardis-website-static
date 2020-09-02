@@ -581,8 +581,22 @@ footer {
   line-height: $alt-line-height;
 
   .navbar-brand {
+    display: inline-block;
+
     img {
+      display: inline-block;
       width: auto;
+      padding-bottom: 3px;
+      vertical-align: text-bottom;
+    }
+
+    .navbar-brand-name {
+      display: inline-block;
+      color: $gray-100;
+      font-size: 34px;
+      line-height: 1;
+      font-weight: $font-weight-light;
+      vertical-align: text-bottom;
     }
   }
 
