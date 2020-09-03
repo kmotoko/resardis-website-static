@@ -32,9 +32,10 @@ permalink: "/:categories/:title/"
 langs: ["en"]
 
 favicon:
+  title: "Resardis"
   safari: "f4a93b"
-  msapplication: "000000"
-  theme: "000000"
+  msapplication: "1a1a1a"
+  theme: "1a1a1a"
 
 thumbnail:
   base: "/assets/img/"
