@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2048"
+   height="1536"
+   version="1.1"
+   viewBox="0 0 542 406"
+   id="svg142"
+   sodipodi:docname="side_chain_second_layer_4x3.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <defs
+     id="defs146" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1848"
+     inkscape:window-height="1017"
+     id="namedview144"
+     showgrid="false"
+     inkscape:zoom="0.43457604"
+     inkscape:cx="1200.5863"
+     inkscape:cy="933.67872"
+     inkscape:window-x="72"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg142" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Cagatay Aydin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Resardis Teknoloji A.S.</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     x=".0478"
+     y="-.202"
+     width="542"
+     height="406"
+     id="rect4"
+     style="fill:#f7f7f7;fill-opacity:1"
+     stroke-width=".0956"
+     stroke="#fff"
+     fill="#fff" />
+  <g
+     transform="matrix(.77641108 0 0 .77641108 -503.53033 113.43027)"
+     stroke-width=".26464844"
+     id="g140" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:109.5069046px;line-height:1.25;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.73767257"
+     x="19.230743"
+     y="92.18573"
+     id="text4662"><tspan
+       sodipodi:role="line"
+       id="tspan4660"
+       x="19.230743"
+       y="92.18573"
+       style="fill:#f4a93b;fill-opacity:1;stroke-width:2.73767257">Side Chain</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:69.44754791px;line-height:1.25;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.73618865"
+     x="97.761307"
+     y="-480.67496"
+     id="text4674"
+     transform="rotate(90)"><tspan
+       sodipodi:role="line"
+       id="tspan4672"
+       x="97.761307"
+       y="-480.67496"
+       style="fill:#343a40;fill-opacity:1;stroke-width:1.73618865">Plasma</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.65378952px;line-height:1.25;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.46634471"
+     x="-395.08841"
+     y="59.375774"
+     id="text4678"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan4676"
+       x="-395.08841"
+       y="59.375774"
+       style="stroke-width:1.46634471;fill:#343a40;fill-opacity:1">Blockchain</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.24999237px;line-height:1.25;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.90624976"
+     x="75.701782"
+     y="379.63727"
+     id="text4674-8"><tspan
+       sodipodi:role="line"
+       id="tspan4672-9"
+       x="75.701782"
+       y="379.63727"
+       style="fill:#343a40;fill-opacity:1;stroke-width:1.90624976"><tspan
+   style="fill:#f4a93b;fill-opacity:1"
+   id="tspan4588">Second</tspan> Layer</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:94.84633636px;line-height:1.25;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f4a93b;fill-opacity:1;stroke:none;stroke-width:2.37115812"
+     x="233.48386"
+     y="296.12164"
+     id="text4674-3"><tspan
+       sodipodi:role="line"
+       id="tspan4672-6"
+       x="233.48386"
+       y="296.12164"
+       style="fill:#f4a93b;fill-opacity:1;stroke-width:2.37115812">Matic</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:87.26347351px;line-height:1.25;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.18158674"
+     x="71.585327"
+     y="190.68227"
+     id="text4674-80"><tspan
+       sodipodi:role="line"
+       id="tspan4672-2"
+       x="71.585327"
+       y="190.68227"
+       style="fill:#343a40;fill-opacity:1;stroke-width:2.18158674">Liquid</tspan></text>
+</svg>
