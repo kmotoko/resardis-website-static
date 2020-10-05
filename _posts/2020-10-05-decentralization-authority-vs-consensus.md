@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Decentralization: How It Differs"
+title: "Decentralization: Authority vs Consensus"
 date: 2020-10-05 05:00:00 +0300
 last_modified_at: 2020-10-05 05:00:00 +0300
 published: true
